@@ -1,13 +1,14 @@
 package main
 
-import ("context"
-greetterService "go-framework-01/grpc_example/grpc_example_proto/protocol"
+import (
+	"context"
+	"go-framework-01/grpc_example/proto"
 	"log"
 )
 
 type Greeter  struct{}
 
-func (greeter *Greeter) HelloService(ctx context.Context, request greetterService.Request, response *greetterService.Response) error {
+func (greeter *Greeter) HelloService(ctx context.Context, request proto.Request, response *proto.Response) error {
 	log.Print("received ")
 	response.Msg="hello "+request.Name
 	return nil
