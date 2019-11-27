@@ -15,3 +15,5 @@ require (
 	google.golang.org/grpc v1.25.1
 	gopkg.in/go-playground/validator.v8 v8.18.2 // indirect
 )
+
+replace github.com/gogo/protobuf => github.com/gogo/protobuf v1.3.0
