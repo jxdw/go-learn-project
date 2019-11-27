@@ -6,7 +6,7 @@ import (
 	"github.com/micro/go-micro"
 	"github.com/micro/go-micro/registry"
 	"github.com/micro/go-plugins/registry/etcdv3"
-	protocol "go-framework-01/gomicro_grpc_example/proto"
+	protocol "go-framework-01/gomicro_grpc_etcd_example/proto"
 	"log"
 )
 

@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	protocol "go-framework-01/google_grpc_example/proto"
+	protocol "go-framework-01/google_grpc_basic_example/proto"
 	"google.golang.org/grpc"
 	"log"
 	"time"
