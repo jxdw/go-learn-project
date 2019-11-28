@@ -12,10 +12,15 @@ import (
 )
 
 func main() {
-	EtcdAddr:="192.168.172.5:2379;192.168.172.6:2379;192.168.172.7:2379"
+	//EtcdAddr:="192.168.172.5:2379;192.168.172.6:2379;192.168.172.7:2379"
+	EtcdAddr:="127.0.0.1:2379"
 	r := registercenter.NewResolver(EtcdAddr)
 	resolver.Register(r)
+
+	//这里的://authority可以随意写但是需要://开头
 	conn, err := grpc.Dial(r.Scheme()+"://abc/GreeterService", grpc.WithBalancerName("round_robin"),grpc.WithInsecure())
+	//conn, err := grpc.Dial(r.Scheme()+"/GreeterService", grpc.WithBalancerName("round_robin"),grpc.WithInsecure())
+
 	defer conn.Close()
 	if err != nil {
 		log.Fatalf("did not connect: %v", err)

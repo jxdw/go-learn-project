@@ -21,16 +21,19 @@ func (greeter *Greeter) Helloservice(ctx context.Context, req *protocol.RequestM
 	return &responseMessage,nil
 }
 func main() {
-	lis,err:=net.Listen("tcp","10.3.20.57:8084")
+	//lis,err:=net.Listen("tcp","10.3.20.57:8084")
+	lis,err:=net.Listen("tcp","127.0.0.1:8084")
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
 	}
-	go registercenter.Register("192.168.172.5:2379;192.168.172.6:2379;192.168.172.7:2379","GreeterService","10.3.20.57:8084",10)
+	//go registercenter.Register("192.168.172.5:2379;192.168.172.6:2379;192.168.172.7:2379","GreeterService","10.3.20.57:8084",10)
+	go registercenter.Register("127.0.0.1:2379","GreeterService","127.0.0.1:8084",10)
 	ch := make(chan os.Signal, 1)
 	signal.Notify(ch, syscall.SIGTERM, syscall.SIGINT, syscall.SIGKILL, syscall.SIGHUP, syscall.SIGQUIT)
 	go func() {
 		s := <-ch
-		registercenter.UnRegister("GreeterService", "10.3.20.57:8084")
+		//registercenter.UnRegister("GreeterService", "10.3.20.57:8084")
+		registercenter.UnRegister("GreeterService", "127.0.0.1:8084")
 
 		if i, ok := s.(syscall.Signal); ok {
 			os.Exit(int(i))

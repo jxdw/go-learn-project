@@ -25,7 +25,9 @@ type etcdResolver struct {
 func NewResolver(etcdAddr string) resolver.Builder {
 	return &etcdResolver{rawAddr: etcdAddr}
 }
-
+/**
+实现resolver.Builder接口的build方法
+ */
 func (r *etcdResolver) Build(target resolver.Target, cc resolver.ClientConn, opts resolver.BuildOption) (resolver.Resolver, error) {
 	var err error
 
@@ -45,17 +47,23 @@ func (r *etcdResolver) Build(target resolver.Target, cc resolver.ClientConn, opt
 
 	return r, nil
 }
-
+/**
+实现resolver.Builder接口的Scheme方法
+ */
 func (r etcdResolver) Scheme() string {
 	return schema
 }
-
+/**
+实现resolver.Resolver接口的ResolveNow方法
+*/
 func (r etcdResolver) ResolveNow(rn resolver.ResolveNowOption) {
 	log.Println("ResolveNow") // TODO check
 }
 
-// Close closes the resolver.
-func (r etcdResolver) Close() {
+/**
+实现resolver.Resolver接口的Close方法
+*/
+func (r *etcdResolver) Close() {
 	log.Println("Close")
 }
 
