@@ -15,8 +15,7 @@ func main() {
 	EtcdAddr:="192.168.172.5:2379;192.168.172.6:2379;192.168.172.7:2379"
 	r := registercenter.NewResolver(EtcdAddr)
 	resolver.Register(r)
-	conn, err := grpc.Dial(r.Scheme()+"://author/GreeterService", grpc.WithBalancerName("round_robin"),grpc.WithInsecure())
-	//conn, err := grpc.Dial(r.Scheme()+"/GreeterService", grpc.WithBalancerName("round_robin"),grpc.WithInsecure())
+	conn, err := grpc.Dial(r.Scheme()+"://abc/GreeterService", grpc.WithBalancerName("round_robin"),grpc.WithInsecure())
 	defer conn.Close()
 	if err != nil {
 		log.Fatalf("did not connect: %v", err)
