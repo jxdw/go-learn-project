@@ -12,8 +12,8 @@ import (
 )
 
 func main() {
-	//EtcdAddr:="192.168.172.5:2379;192.168.172.6:2379;192.168.172.7:2379"
-	EtcdAddr:="127.0.0.1:2379"
+	EtcdAddr:="192.168.172.5:2379;192.168.172.6:2379;192.168.172.7:2379"
+	//EtcdAddr:="127.0.0.1:2379"
 	r := registercenter.NewResolver(EtcdAddr)
 	resolver.Register(r)
 
