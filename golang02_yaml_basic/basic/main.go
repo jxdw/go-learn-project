@@ -11,8 +11,8 @@ import (
 
 func main() {
 	fmt.Println(os.Args[1])
-	conf:=new(conf.Yaml)
-	yamlFile,err:=ioutil.ReadFile(os.Args[1]+"/test.yaml")
+	conf:=new(conf.Config)
+	yamlFile,err:=ioutil.ReadFile(os.Args[1]+"/config.yaml")
 	if err!=nil {
 		log.Printf("yamlFile.Get err #%v ", err)
 	}
@@ -20,6 +20,6 @@ func main() {
 	if err!=nil {
 		log.Printf("yaml Unmarshal err %v ", err)
 	}
-	log.Println("conf",*conf)
+	log.Println("conf",conf.Mysql)
 
 }

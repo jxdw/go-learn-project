@@ -11,6 +11,7 @@ require (
 	github.com/golang/protobuf v1.3.2
 	github.com/micro/go-micro v1.16.0
 	github.com/micro/go-plugins v1.5.1
+	github.com/prometheus/client_golang v1.2.1
 	github.com/robfig/cron v1.2.0
 	github.com/streadway/amqp v0.0.0-20190827072141-edfb9018d271
 	github.com/ugorji/go v1.1.7 // indirect

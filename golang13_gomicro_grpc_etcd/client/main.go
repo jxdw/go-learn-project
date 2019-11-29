@@ -16,7 +16,6 @@ func main() {
 	})
 	service:=micro.NewService(
 		micro.Registry(registry),
-
 	)
 	service.Init()
 	serviceClient:=protocol.NewGreeterService("greeter.service",service.Client())

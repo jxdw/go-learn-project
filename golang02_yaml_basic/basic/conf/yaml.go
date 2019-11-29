@@ -1,6 +1,6 @@
 package conf
 
-type Yaml struct {
+type Config struct {
 	Mysql struct {
 		User string `yaml:"user"`
 		Host string `yaml:"host"`
