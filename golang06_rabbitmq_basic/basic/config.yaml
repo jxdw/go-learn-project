@@ -1,0 +1,2 @@
+rabbitmqAddress: amqp://admin:admin@192.168.172.3:5672/admin
+rabbitmqQueue: go-test
