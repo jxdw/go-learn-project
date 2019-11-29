@@ -1,0 +1,9 @@
+cache:
+  enable : false
+  list : [redis]
+mysql:
+  user : root
+  password : 123456
+  host : 192.168.172.2
+  port : 3306
+  name : bbs_mc
