@@ -12,13 +12,13 @@ require (
 	github.com/micro/go-micro v1.16.0
 	github.com/micro/go-plugins v1.5.1
 	github.com/robfig/cron v1.2.0
+	github.com/streadway/amqp v0.0.0-20190827072141-edfb9018d271
 	github.com/ugorji/go v1.1.7 // indirect
 	golang.org/x/crypto v0.0.0-20191108234033-bd318be0434a // indirect
 	golang.org/x/sys v0.0.0-20191110163157-d32e6e3b99c4 // indirect
 	google.golang.org/grpc v1.25.1
 	gopkg.in/go-playground/validator.v8 v8.18.2 // indirect
 	gopkg.in/yaml.v2 v2.2.4
-
 )
 
 replace github.com/gogo/protobuf => github.com/gogo/protobuf v1.3.0

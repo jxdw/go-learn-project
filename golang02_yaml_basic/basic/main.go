@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go-framework-01/yaml_basic_example/basic/conf"
+	"go-framework-01/golang02_yaml_basic/basic/conf"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
 	"log"
