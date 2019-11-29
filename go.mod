@@ -6,6 +6,7 @@ require (
 	github.com/coreos/etcd v3.3.17+incompatible
 	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/gin-gonic/gin v1.3.0
+	github.com/go-redis/redis v6.15.6+incompatible
 	github.com/go-sql-driver/mysql v1.4.1
 	github.com/golang/protobuf v1.3.2
 	github.com/micro/go-micro v1.16.0
