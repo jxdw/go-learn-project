@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"go-framework-01/golang08_grpc_basic/proto"
-	"go-framework-01/golang11_grpc_etcd_gin/registercenter"
+	"go-framework-01/golang10_grpc_etcd_gin/registercenter"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 	"log"

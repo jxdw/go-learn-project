@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"go-framework-01/golang10_prometheus_basic/basic/config"
+	"go-framework-01/golang13_prometheus_basic/basic/config"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
 	"log"
