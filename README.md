@@ -22,4 +22,4 @@
 - 消息client: rabbitmq client
 - 注册client: etcd client
 - 链路client: jaeger client
-- 应用client: prometheus client
+- 监控client: prometheus client
