@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	result,err:=do("GET","http://192.168.172.3:15672/api/vhosts",nil);
+	result,err:=do("GET","http://192.168.172.3:15672/api/connections",nil);
 	if err!=nil {
 		panic(err)
 	}

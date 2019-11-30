@@ -3,3 +3,6 @@
 
 # 最新的rabbitmq api文档地址
 https://rawcdn.githack.com/rabbitmq/rabbitmq-management/v3.8.1/priv/www/api/index.html
+
+# 参考资料
+https://supereagle.github.io/2017/11/22/request-with-auth/
