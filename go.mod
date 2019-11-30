@@ -3,6 +3,8 @@ module go-learn-code
 go 1.13
 
 require (
+	github.com/Shopify/sarama v1.24.1
+	github.com/bsm/sarama-cluster v2.1.15+incompatible
 	github.com/coreos/etcd v3.3.17+incompatible
 	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/gin-gonic/gin v1.3.0
@@ -14,8 +16,6 @@ require (
 	github.com/prometheus/client_golang v1.2.1
 	github.com/robfig/cron v1.2.0
 	github.com/streadway/amqp v0.0.0-20190827072141-edfb9018d271
-	github.com/uber/jaeger-client-go v2.20.1+incompatible // indirect
-	github.com/uber/jaeger-lib v2.2.0+incompatible // indirect
 	github.com/ugorji/go v1.1.7 // indirect
 	golang.org/x/crypto v0.0.0-20191108234033-bd318be0434a // indirect
 	golang.org/x/sys v0.0.0-20191110163157-d32e6e3b99c4 // indirect
