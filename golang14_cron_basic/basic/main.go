@@ -9,9 +9,12 @@ import (
 
 func main() {
 	c := cron.New()
-	c.AddFunc("* * * * * *", func() { fmt.Println("Every hour on the half hour") })
+	c.AddFunc("* * * * * *", business)
 	go c.Start()
 	sig := make(chan os.Signal)
 	signal.Notify(sig, os.Interrupt, os.Kill)
 	<-sig
+}
+func business() {
+	fmt.Println("Every hour on the half hour")
 }

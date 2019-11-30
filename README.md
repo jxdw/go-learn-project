@@ -1,6 +1,6 @@
 # 1.项目依赖
 ## 1.1 项目基本依赖
-- 开发工具: goland 2019.3候选版本 (https://download.jetbrains.8686c.com/go/goland-193.5233.69.exe)
+- 开发工具: goland2019.3 (https://download.jetbrains.8686c.com/go/goland-2019.3.exe)
 - sdk版本 : 1.13.4
 - 代理辅助: https://goproxy.cn
 
@@ -21,9 +21,20 @@
 - job框架 ：cron+etcd client
 
 ## 2.2 中间件的go client
-- 缓存go client: redis client
-- 存储go client: mysql client
-- 消息go client: rabbitmq client
-- 注册go client: etcd client
-- 链路go client: jaeger client
-- 监控go client: prometheus client
+- redis go client<br>
+ https://github.com/go-redis/redis
+ 
+- mysql go client<br> 
+https://github.com/go-sql-driver/mysql
+
+- rabbitmq go client<br> 
+https://github.com/streadway/amqp
+
+- etcd go client<br>
+ https://github.com/coreos/etcd
+
+- jaegar go client<br> 
+https://github.com/uber/jaeger-client-go
+
+- promtheus go client<br>
+https://github.com/prometheus/client_golang

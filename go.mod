@@ -1,4 +1,4 @@
-module go-framework-01
+module go-learn-code
 
 go 1.13
 
@@ -14,6 +14,8 @@ require (
 	github.com/prometheus/client_golang v1.2.1
 	github.com/robfig/cron v1.2.0
 	github.com/streadway/amqp v0.0.0-20190827072141-edfb9018d271
+	github.com/uber/jaeger-client-go v2.20.1+incompatible // indirect
+	github.com/uber/jaeger-lib v2.2.0+incompatible // indirect
 	github.com/ugorji/go v1.1.7 // indirect
 	golang.org/x/crypto v0.0.0-20191108234033-bd318be0434a // indirect
 	golang.org/x/sys v0.0.0-20191110163157-d32e6e3b99c4 // indirect
