@@ -1,20 +1,36 @@
 package main
+
 import (
 	"context"
 	"fmt"
 	"gopkg.in/olivere/elastic.v5"
+	"gopkg.in/yaml.v2"
+	"io/ioutil"
+	"log"
+	"os"
 	"strconv"
 	"time"
 )
-var host=[]string{
-	"http://192.168.172.5:9200/",
-	"http://192.168.172.6:9200/",
-	"http://192.168.172.7:9200/",
+type Conf struct {
+	IndexPrefix string `yaml:"indexprefix"`
+	HostAddress []string `yaml:"hostAddress"`
+	MaxInt  int `yaml:"maxInt"`
 }
+var conf Conf
 var client *elastic.Client
+
 func init(){
-	var err  error
-	client, err = elastic.NewClient(elastic.SetURL(host...))
+	conf=Conf{}
+	yamlFile,err:=ioutil.ReadFile(os.Args[1]+"/conf.yaml")
+	if err!=nil {
+		log.Printf("yamlFile.Get err #%v ", err)
+	}
+	err=yaml.Unmarshal(yamlFile,&conf)
+	if err!=nil {
+		log.Printf("yaml Unmarshal err %v ", err)
+	}
+
+	client, err = elastic.NewClient(elastic.SetURL(conf.HostAddress...))
 	if err != nil {
 		fmt.Printf("create client failed, err: %v", err)
 
@@ -23,7 +39,7 @@ func init(){
 func PingNode() {
 	start := time.Now()
 
-	info, code, err := client.Ping(host[0]).Do(context.Background())
+	info, code, err := client.Ping(conf.HostAddress[0]).Do(context.Background())
 	if err != nil {
 		fmt.Printf("ping es failed, err: %v", err)
 	}
@@ -45,8 +61,13 @@ func main() {
 	PingNode()
 	//fmt.Println(time.Now().Format("2018.01.01"))
 	var x int=1
-	for x<10{
-		indexName:="logstash-bbs-2019.11.0"+strconv.Itoa(x);
+	for x < conf.MaxInt {
+		var indexName string
+		if x<10 {
+			indexName=conf.IndexPrefix+"0"+strconv.Itoa(x);
+		}else {
+			indexName=conf.IndexPrefix+strconv.Itoa(x);
+		}
 		fmt.Println(DelIndex(indexName))
 		x=x+1
 	}
