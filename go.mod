@@ -21,6 +21,7 @@ require (
 	golang.org/x/sys v0.0.0-20191110163157-d32e6e3b99c4 // indirect
 	google.golang.org/grpc v1.25.1
 	gopkg.in/go-playground/validator.v8 v8.18.2 // indirect
+	gopkg.in/olivere/elastic.v5 v5.0.82
 	gopkg.in/yaml.v2 v2.2.4
 )
 
