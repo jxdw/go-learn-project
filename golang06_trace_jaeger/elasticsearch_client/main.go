@@ -11,14 +11,21 @@ import (
 	"strconv"
 	"time"
 )
+
+/**
+配置文件结构体
+ */
 type Conf struct {
 	IndexPrefix string `yaml:"indexprefix"`
 	HostAddress []string `yaml:"hostAddress"`
 	MaxInt  int `yaml:"maxInt"`
 }
 var conf Conf
-var client *elastic.Client
 
+var client *elastic.Client
+/**
+读取配置文件，完成参数的初始化
+ */
 func init(){
 	conf=Conf{}
 	yamlFile,err:=ioutil.ReadFile(os.Args[1]+"/conf.yaml")
@@ -36,6 +43,9 @@ func init(){
 
 	}
 }
+/**
+
+ */
 func PingNode() {
 	start := time.Now()
 
