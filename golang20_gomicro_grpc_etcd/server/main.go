@@ -5,7 +5,7 @@ import (
 	"github.com/micro/go-micro"
 	"github.com/micro/go-micro/registry"
 	"github.com/micro/go-plugins/registry/etcdv3"
-	"go-learn-code/golang16_gomicro_grpc_etcd/proto"
+	"go-learn-code/golang20_gomicro_grpc_etcd/proto"
 	"log"
 	"strconv"
 )

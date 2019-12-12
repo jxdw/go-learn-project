@@ -6,7 +6,7 @@ import (
 	"github.com/micro/go-micro/registry"
 	"github.com/micro/go-micro/web"
 	"github.com/micro/go-plugins/registry/etcdv3"
-	"go-learn-code/golang15_gomicro_web_etcd/controller"
+	"go-learn-code/golang19_gomicro_web_etcd/controller"
 	"log"
 	"net/http"
 )
