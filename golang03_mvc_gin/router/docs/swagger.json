@@ -1,0 +1,34 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "contact": {},
+        "license": {}
+    },
+    "paths": {
+        "/someGet": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "获取查询的信息",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "查询的信息",
+                        "name": "one",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{\"status\":\"OK\",\"message\":\"ok\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

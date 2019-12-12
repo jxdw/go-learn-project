@@ -1,0 +1,21 @@
+info:
+  contact: {}
+  license: {}
+paths:
+  /someGet:
+    get:
+      parameters:
+      - description: 查询的信息
+        in: path
+        name: one
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"status":"OK","message":"ok"}'
+          schema:
+            type: string
+      summary: 获取查询的信息
+swagger: "2.0"
