@@ -19,6 +19,7 @@ type Conf struct {
 	IndexPrefix string `yaml:"indexprefix"`
 	HostAddress []string `yaml:"hostAddress"`
 	MaxInt  int `yaml:"maxInt"`
+	MinInt  int `yaml:"minInt"`
 }
 var conf Conf
 
@@ -70,7 +71,7 @@ func DelIndex(index... string) bool {
 func main() {
 	PingNode()
 	//fmt.Println(time.Now().Format("2018.01.01"))
-	var x int=1
+	x:=conf.MinInt
 	for x < conf.MaxInt {
 		var indexName string
 		if x<10 {

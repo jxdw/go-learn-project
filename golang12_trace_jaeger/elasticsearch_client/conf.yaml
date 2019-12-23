@@ -1,3 +1,4 @@
-indexprefix: logstash-publicfund-2019.12.
+indexprefix: jaeger-span-2019-12-
 hostAddress: ["http://192.168.172.5:9200/","http://192.168.172.6:9200/","http://192.168.172.7:9200/"]
-maxInt: 2
+maxInt: 14
+minInt: 11

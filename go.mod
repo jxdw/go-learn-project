@@ -1,4 +1,4 @@
-module go-learn-code
+module go-learn-project
 
 go 1.13
 
