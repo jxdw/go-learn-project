@@ -7,7 +7,7 @@ golang 1.13.5
 - 代理辅助: https://goproxy.cn
 - 调试工具: postman、grpcui
 
-## <h4>1.3 依赖的DB、中间件</h4>
+## <h4>1.3 DB、中间件的依赖</h4>
 - 缓存技术: redis
 - 存储技术: mysql
 - 消息队列: kafka、rabbitmq（延迟队列）
