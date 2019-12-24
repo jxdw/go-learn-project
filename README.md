@@ -1,5 +1,5 @@
 # 说明
-## 1.本仓库依赖
+## 1.本仓库依赖概述
 ### 1.1.1 基本依赖
 - 开发工具: goland2019.3 (https://download.jetbrains.8686c.com/go/goland-2019.3.exe)
 - sdk版本 : 1.13.4
@@ -40,9 +40,3 @@ https://github.com/uber/jaeger-client-go
 
 - promtheus go client<br>
 https://github.com/prometheus/client_golang
-
-# 2.各个project的参考资料
-## 2.1 golang01_basic_api工程
-- 1.unkown的go语言入门:https://github.com/unknwon/the-way-to-go_ZH_CN
-- 2.go http编程:https://cizixs.com/2016/08/17/golang-http-server-side/
-- 3.golang版设计模式: https://github.com/senghoo/golang-design-pattern
