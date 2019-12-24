@@ -2,8 +2,8 @@ package main
 
 import (
 	"context"
-	"go-learn-code/golang13_grpc_etcd_gin/proto"
-	"go-learn-code/golang13_grpc_etcd_gin/registercenter"
+	"go-learn-project/golang13_grpc_etcd_gin/proto"
+	"go-learn-project/golang13_grpc_etcd_gin/registercenter"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 	"log"

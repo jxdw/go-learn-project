@@ -1,14 +1,16 @@
 syntax = "proto3";
 package protocol;
 
-service c {
-	rpc Helloservice(RequestMessage) returns (ResponseMessage) {}
+service Greeter {
+	rpc Helloservice(HelloRequestMessage) returns (HelloResponseMessage) {}
 }
 
-message RequestMessage {
+message HelloRequestMessage {
 	string name = 1;
 }
 
-message ResponseMessage {
+message HelloResponseMessage {
 	string msg = 1;
+	int32 code=2;
+	string data=3;
 }

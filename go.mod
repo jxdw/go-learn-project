@@ -8,6 +8,7 @@ require (
 	github.com/bsm/sarama-cluster v2.1.15+incompatible
 	github.com/codahale/hdrhistogram v0.0.0-20161010025455-3a0bb77429bd // indirect
 	github.com/coreos/etcd v3.3.17+incompatible
+	github.com/fullstorydev/grpcui v0.2.1
 	github.com/gin-gonic/gin v1.5.0
 	github.com/go-openapi/jsonreference v0.19.3 // indirect
 	github.com/go-openapi/spec v0.19.5 // indirect

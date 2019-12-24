@@ -5,7 +5,7 @@ import (
 	"github.com/gin-gonic/gin"
 	ginSwagger "github.com/swaggo/gin-swagger"
 	"github.com/swaggo/gin-swagger/swaggerFiles"
-	_ "go-learn-code/golang10_mvc_gin/router/docs"
+	_ "go-learn-project/golang10_mvc_gin/router/docs"
 	"net/http"
 )
 

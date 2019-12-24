@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	protocol "go-learn-code/golang10_rpc_grpc/proto"
+	protocol "go-learn-project/golang11_rpc_grpc/proto"
 	"google.golang.org/grpc"
 	"log"
 	"time"
@@ -19,7 +19,7 @@ func main() {
 	ctx,cancel:=context.WithTimeout(context.Background(),time.Second*200)
 	defer cancel()
 
-	response,err:=c.Helloservice(ctx,&protocol.RequestMessage{Name:"xiaogang"})
+	response,err:=c.Helloservice(ctx,&protocol.HelloRequestMessage{Name:"xiaogang"})
 	if err!=nil {
 		log.Fatalln("could not  greet :%v",err)
 	}
