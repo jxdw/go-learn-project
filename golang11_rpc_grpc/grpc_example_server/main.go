@@ -10,36 +10,38 @@ import (
 	"net"
 )
 
-type Greeter struct{}
+type EatService struct{}
 
-func (greeter *Greeter) Breakfast(ctx context.Context, req *greetercenter.BreakfastRequestMessage) (*greetercenter.BreakfastResponseMessage, error) {
-	log.Print("received ")
-	//conn, err :=dbServer.connect(ctx)
-	//if err!=nil {
-	//
-	//}
-	//conn.QueryContext(ctx,"SELECT `ID`, `Title`, `Description`, `Reminder` FROM ToDo WHERE `ID`=?",)
-	responseMessage := greetercenter.BreakfastResponseMessage{Msg: "breakfast success", Code: 200, Data: "hello " + req.Name}
+func (greeter *EatService) BreakfastEat(ctx context.Context, req *greetercenter.BreakfastEatRequestMessage) (*greetercenter.BreakfastEatResponseMessage, error) {
+	log.Print("BreakfastEat received ")
+	responseMessage := greetercenter.BreakfastEatResponseMessage{Msg: "breakfast success", Code: 200, Data: "hello " + req.Name}
 	return &responseMessage, nil
 }
-func (greeter *Greeter) Lunch(ctx context.Context, req *greetercenter.LunchRequestMessage) (*greetercenter.LunchResponseMessage, error) {
-	log.Print("received ")
-	//conn, err :=dbServer.connect(ctx)
-	//if err!=nil {
-	//
-	//}
-	//conn.QueryContext(ctx,"SELECT `ID`, `Title`, `Description`, `Reminder` FROM ToDo WHERE `ID`=?",)
-	responseMessage := greetercenter.LunchResponseMessage{Msg: "breakfast success", Code: 200, Data: "hello " + req.Name}
+func (greeter *EatService) LunchEat(ctx context.Context, req *greetercenter.LunchEatRequestMessage) (*greetercenter.LunchEatResponseMessage, error) {
+	log.Print("LunchEat received ")
+	responseMessage := greetercenter.LunchEatResponseMessage{Msg: "breakfast success", Code: 200, Data: "hello " + req.Name}
 	return &responseMessage, nil
 }
-func (greeter *Greeter) Dinner(ctx context.Context, req *greetercenter.DinnerRequestMessage) (*greetercenter.DinnerResponseMessage, error) {
-	log.Print("received ")
-	//conn, err :=dbServer.connect(ctx)
-	//if err!=nil {
-	//
-	//}
-	//conn.QueryContext(ctx,"SELECT `ID`, `Title`, `Description`, `Reminder` FROM ToDo WHERE `ID`=?",)
-	responseMessage := greetercenter.DinnerResponseMessage{Msg: "dinner success", Code: 200, Data: "hello " + req.Name}
+func (greeter *EatService) DinnerEat(ctx context.Context, req *greetercenter.DinnerEatRequestMessage) (*greetercenter.DinnerEatResponseMessage, error) {
+	log.Print("DinnerEat received ")
+	responseMessage := greetercenter.DinnerEatResponseMessage{Msg: "dinner success", Code: 200, Data: "hello " + req.Name}
+	return &responseMessage, nil
+}
+type DrinkService struct{}
+
+func (greeter *DrinkService) BreakfastDrink(ctx context.Context, req *greetercenter.BreakfastDrinkRequestMessage) (*greetercenter.BreakfastDrinkResponseMessage, error) {
+	log.Print("BreakfastDrink received ")
+	responseMessage := greetercenter.BreakfastDrinkResponseMessage{Msg: "breakfast success", Code: 200, Data: "hello " + req.Name}
+	return &responseMessage, nil
+}
+func (greeter *DrinkService) LunchDrink(ctx context.Context, req *greetercenter.LunchDrinkRequestMessage) (*greetercenter.LunchDrinkResponseMessage, error) {
+	log.Print("LunchDrink received ")
+	responseMessage := greetercenter.LunchDrinkResponseMessage{Msg: "breakfast success", Code: 200, Data: "hello " + req.Name}
+	return &responseMessage, nil
+}
+func (greeter *DrinkService) DinnerDrink(ctx context.Context, req *greetercenter.DinnerDrinkRequestMessage) (*greetercenter.DinnerDrinkResponseMessage, error) {
+	log.Print("DinnerDrink received ")
+	responseMessage := greetercenter.DinnerDrinkResponseMessage{Msg: "dinner success", Code: 200, Data: "hello " + req.Name}
 	return &responseMessage, nil
 }
 func main() {
@@ -48,8 +50,10 @@ func main() {
 		log.Fatalf("failed to listen: %v", err)
 	}
 	s := grpc.NewServer()
-	greeter := Greeter{}
-	greetercenter.RegisterEatServer(s, &greeter)
+	eatService := EatService{}
+	drinkService :=DrinkService{}
+	greetercenter.RegisterEatServer(s, &eatService)
+	greetercenter.RegisterDrinkServer(s,&drinkService)
 	reflection.Register(s)
 	if err := s.Serve(lis); err != nil {
 		log.Fatalf("failed to serve: %v", err)

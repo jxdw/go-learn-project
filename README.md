@@ -9,7 +9,7 @@
 ### 1.1.2 依赖的DB、中间件
 - 缓存技术: redis
 - 存储技术: mysql
-- 消息队列: rabbitmq
+- 消息队列: kafka、rabbitmq（延迟队列）
 - 注册发现: etcd
 - 链路监控: jaeger(elasticsearch做存储)
 - 应用监控: prometheus

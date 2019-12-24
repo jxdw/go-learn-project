@@ -1,0 +1,72 @@
+syntax = "proto3";
+package greetercenter;
+
+message BreakfastEatRequestMessage {
+	string name = 1;
+}
+
+message BreakfastEatResponseMessage {
+	string msg = 1;
+	int32 code=2;
+	string data=3;
+}
+
+message LunchEatRequestMessage {
+	string name = 1;
+}
+
+message LunchEatResponseMessage {
+	string msg = 1;
+	int32 code=2;
+	string data=3;
+}
+message DinnerEatRequestMessage {
+	string name = 1;
+}
+
+message DinnerEatResponseMessage {
+	string msg = 1;
+	int32 code=2;
+	string data=3;
+}
+
+message BreakfastDrinkRequestMessage {
+	string name = 1;
+}
+
+message BreakfastDrinkResponseMessage {
+	string msg = 1;
+	int32 code=2;
+	string data=3;
+}
+
+message LunchDrinkRequestMessage {
+	string name = 1;
+}
+
+message LunchDrinkResponseMessage {
+	string msg = 1;
+	int32 code=2;
+	string data=3;
+}
+message DinnerDrinkRequestMessage {
+	string name = 1;
+}
+
+message DinnerDrinkResponseMessage {
+	string msg = 1;
+	int32 code=2;
+	string data=3;
+}
+
+service Eat {
+	rpc BreakfastEat(BreakfastEatRequestMessage) returns (BreakfastEatResponseMessage) {}
+	rpc LunchEat(LunchEatRequestMessage) returns (LunchEatResponseMessage) {}
+	rpc DinnerEat(DinnerEatRequestMessage) returns (DinnerEatResponseMessage) {}
+}
+
+service Drink {
+	rpc BreakfastDrink(BreakfastDrinkRequestMessage) returns (BreakfastDrinkResponseMessage) {}
+	rpc LunchDrink(LunchDrinkRequestMessage) returns (LunchDrinkResponseMessage) {}
+	rpc DinnerDrink(DinnerDrinkRequestMessage) returns (DinnerDrinkResponseMessage) {}
+}
