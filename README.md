@@ -2,7 +2,7 @@
 ## <h4>1.1 golang sdk版本</h4>
 golang 1.13.5
 
-## <h4>1.3 DB、中间件的依赖</h4>
+## <h4>1.2 DB、中间件的依赖</h4>
 - 缓存技术: redis
 - 存储技术: mysql
 - 消息队列: kafka、rabbitmq（延迟队列）
@@ -11,7 +11,7 @@ golang 1.13.5
 - 应用监控: prometheus
 - 任务调度: etcd
 
-## <h4>1.2 工具依赖</h4>
+## <h4>1.3 工具依赖</h4>
 - 开发工具: goland2019.3 (https://download.jetbrains.8686c.com/go/goland-2019.3.exe)
 - 代理辅助: https://goproxy.cn
 - 调试工具: postman、grpcui
