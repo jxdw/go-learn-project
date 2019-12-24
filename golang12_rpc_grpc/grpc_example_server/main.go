@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	_ "github.com/go-sql-driver/mysql"
-	"go-learn-project/golang11_rpc_grpc/greetercenter"
+	"go-learn-project/golang12_rpc_grpc/greetercenter"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 	"log"
