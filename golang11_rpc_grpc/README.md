@@ -7,7 +7,7 @@
   go get github.com/golang/protobuf/protoc-gen-go
 
 ### 1.1.3 生成pb.go文件<br>
-protoc3 --go_out=plugins=grpc:. proto/greeter.proto
+protoc3 --go_out=plugins=grpc:. greetercenter/greeter.proto
 
 ### 1.1.4 下载grpcui工具
 官方readme说的使用办法：<br>
