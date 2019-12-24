@@ -5,7 +5,7 @@
 ## <h4>1.2 proto-gen-go下载</h4>
   go get github.com/golang/protobuf/protoc-gen-go
 
-## 1.3 <h4>生成pb.go文件</h4>
+## <h4>1.3 生成pb.go文件</h4>
 protoc3 --go_out=plugins=grpc:. greetercenter/greetercenter.proto
 
 # <h3>2 下载grpc调试工具grpcui</h3>
