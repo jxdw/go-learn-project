@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	"go-learn-project/golang12_rpc_grpc/greetercenter"
+	"go-learn-project/golang12_rpc_grpc/basic/greetercenter"
 	"google.golang.org/grpc"
 	"log"
 	"time"
