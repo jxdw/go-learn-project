@@ -20,7 +20,8 @@ golang 1.13.5
 - etcd可视化工具:etcdkeeper
 - jaeger可视化工具:jeager ui
 - prometheus可视化工具:prometheus
-- 接口文档工具:gin-swagger
+- 接口文档工具:swag
+
 # <h3>2 本仓库使用的框架概述</h3>
 ## <h4>2.1 使用的框架</h4>
 - 配置框架:yaml
@@ -28,6 +29,7 @@ golang 1.13.5
 - rpc框架:grpc
 - job框架:cron+etcd client
 - 日志框架:file-rotatelogs
+
 ## <h4>2.2 中间件的go client</h4>
 - redis go client<br>
  https://github.com/go-redis/redis
