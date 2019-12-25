@@ -588,6 +588,290 @@ func (m *DinnerDrinkResponseMessage) GetData() string {
 	return ""
 }
 
+type BreakfastPlayRequestMessage struct {
+	Name                 string   `protobuf:"bytes,1,opt,name=name,proto3" json:"name,omitempty"`
+	XXX_NoUnkeyedLiteral struct{} `json:"-"`
+	XXX_unrecognized     []byte   `json:"-"`
+	XXX_sizecache        int32    `json:"-"`
+}
+
+func (m *BreakfastPlayRequestMessage) Reset()         { *m = BreakfastPlayRequestMessage{} }
+func (m *BreakfastPlayRequestMessage) String() string { return proto.CompactTextString(m) }
+func (*BreakfastPlayRequestMessage) ProtoMessage()    {}
+func (*BreakfastPlayRequestMessage) Descriptor() ([]byte, []int) {
+	return fileDescriptor_5bd7cfea030ce2b7, []int{12}
+}
+
+func (m *BreakfastPlayRequestMessage) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_BreakfastPlayRequestMessage.Unmarshal(m, b)
+}
+func (m *BreakfastPlayRequestMessage) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_BreakfastPlayRequestMessage.Marshal(b, m, deterministic)
+}
+func (m *BreakfastPlayRequestMessage) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BreakfastPlayRequestMessage.Merge(m, src)
+}
+func (m *BreakfastPlayRequestMessage) XXX_Size() int {
+	return xxx_messageInfo_BreakfastPlayRequestMessage.Size(m)
+}
+func (m *BreakfastPlayRequestMessage) XXX_DiscardUnknown() {
+	xxx_messageInfo_BreakfastPlayRequestMessage.DiscardUnknown(m)
+}
+
+var xxx_messageInfo_BreakfastPlayRequestMessage proto.InternalMessageInfo
+
+func (m *BreakfastPlayRequestMessage) GetName() string {
+	if m != nil {
+		return m.Name
+	}
+	return ""
+}
+
+type BreakfastPlayResponseMessage struct {
+	Msg                  string   `protobuf:"bytes,1,opt,name=msg,proto3" json:"msg,omitempty"`
+	Code                 int32    `protobuf:"varint,2,opt,name=code,proto3" json:"code,omitempty"`
+	Data                 string   `protobuf:"bytes,3,opt,name=data,proto3" json:"data,omitempty"`
+	XXX_NoUnkeyedLiteral struct{} `json:"-"`
+	XXX_unrecognized     []byte   `json:"-"`
+	XXX_sizecache        int32    `json:"-"`
+}
+
+func (m *BreakfastPlayResponseMessage) Reset()         { *m = BreakfastPlayResponseMessage{} }
+func (m *BreakfastPlayResponseMessage) String() string { return proto.CompactTextString(m) }
+func (*BreakfastPlayResponseMessage) ProtoMessage()    {}
+func (*BreakfastPlayResponseMessage) Descriptor() ([]byte, []int) {
+	return fileDescriptor_5bd7cfea030ce2b7, []int{13}
+}
+
+func (m *BreakfastPlayResponseMessage) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_BreakfastPlayResponseMessage.Unmarshal(m, b)
+}
+func (m *BreakfastPlayResponseMessage) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_BreakfastPlayResponseMessage.Marshal(b, m, deterministic)
+}
+func (m *BreakfastPlayResponseMessage) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BreakfastPlayResponseMessage.Merge(m, src)
+}
+func (m *BreakfastPlayResponseMessage) XXX_Size() int {
+	return xxx_messageInfo_BreakfastPlayResponseMessage.Size(m)
+}
+func (m *BreakfastPlayResponseMessage) XXX_DiscardUnknown() {
+	xxx_messageInfo_BreakfastPlayResponseMessage.DiscardUnknown(m)
+}
+
+var xxx_messageInfo_BreakfastPlayResponseMessage proto.InternalMessageInfo
+
+func (m *BreakfastPlayResponseMessage) GetMsg() string {
+	if m != nil {
+		return m.Msg
+	}
+	return ""
+}
+
+func (m *BreakfastPlayResponseMessage) GetCode() int32 {
+	if m != nil {
+		return m.Code
+	}
+	return 0
+}
+
+func (m *BreakfastPlayResponseMessage) GetData() string {
+	if m != nil {
+		return m.Data
+	}
+	return ""
+}
+
+type LunchPlayRequestMessage struct {
+	Name                 string   `protobuf:"bytes,1,opt,name=name,proto3" json:"name,omitempty"`
+	XXX_NoUnkeyedLiteral struct{} `json:"-"`
+	XXX_unrecognized     []byte   `json:"-"`
+	XXX_sizecache        int32    `json:"-"`
+}
+
+func (m *LunchPlayRequestMessage) Reset()         { *m = LunchPlayRequestMessage{} }
+func (m *LunchPlayRequestMessage) String() string { return proto.CompactTextString(m) }
+func (*LunchPlayRequestMessage) ProtoMessage()    {}
+func (*LunchPlayRequestMessage) Descriptor() ([]byte, []int) {
+	return fileDescriptor_5bd7cfea030ce2b7, []int{14}
+}
+
+func (m *LunchPlayRequestMessage) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_LunchPlayRequestMessage.Unmarshal(m, b)
+}
+func (m *LunchPlayRequestMessage) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_LunchPlayRequestMessage.Marshal(b, m, deterministic)
+}
+func (m *LunchPlayRequestMessage) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_LunchPlayRequestMessage.Merge(m, src)
+}
+func (m *LunchPlayRequestMessage) XXX_Size() int {
+	return xxx_messageInfo_LunchPlayRequestMessage.Size(m)
+}
+func (m *LunchPlayRequestMessage) XXX_DiscardUnknown() {
+	xxx_messageInfo_LunchPlayRequestMessage.DiscardUnknown(m)
+}
+
+var xxx_messageInfo_LunchPlayRequestMessage proto.InternalMessageInfo
+
+func (m *LunchPlayRequestMessage) GetName() string {
+	if m != nil {
+		return m.Name
+	}
+	return ""
+}
+
+//
+//午餐前活动应答结构体
+type LunchPlayResponseMessage struct {
+	Msg                  string   `protobuf:"bytes,1,opt,name=msg,proto3" json:"msg,omitempty"`
+	Code                 int32    `protobuf:"varint,2,opt,name=code,proto3" json:"code,omitempty"`
+	Data                 string   `protobuf:"bytes,3,opt,name=data,proto3" json:"data,omitempty"`
+	XXX_NoUnkeyedLiteral struct{} `json:"-"`
+	XXX_unrecognized     []byte   `json:"-"`
+	XXX_sizecache        int32    `json:"-"`
+}
+
+func (m *LunchPlayResponseMessage) Reset()         { *m = LunchPlayResponseMessage{} }
+func (m *LunchPlayResponseMessage) String() string { return proto.CompactTextString(m) }
+func (*LunchPlayResponseMessage) ProtoMessage()    {}
+func (*LunchPlayResponseMessage) Descriptor() ([]byte, []int) {
+	return fileDescriptor_5bd7cfea030ce2b7, []int{15}
+}
+
+func (m *LunchPlayResponseMessage) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_LunchPlayResponseMessage.Unmarshal(m, b)
+}
+func (m *LunchPlayResponseMessage) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_LunchPlayResponseMessage.Marshal(b, m, deterministic)
+}
+func (m *LunchPlayResponseMessage) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_LunchPlayResponseMessage.Merge(m, src)
+}
+func (m *LunchPlayResponseMessage) XXX_Size() int {
+	return xxx_messageInfo_LunchPlayResponseMessage.Size(m)
+}
+func (m *LunchPlayResponseMessage) XXX_DiscardUnknown() {
+	xxx_messageInfo_LunchPlayResponseMessage.DiscardUnknown(m)
+}
+
+var xxx_messageInfo_LunchPlayResponseMessage proto.InternalMessageInfo
+
+func (m *LunchPlayResponseMessage) GetMsg() string {
+	if m != nil {
+		return m.Msg
+	}
+	return ""
+}
+
+func (m *LunchPlayResponseMessage) GetCode() int32 {
+	if m != nil {
+		return m.Code
+	}
+	return 0
+}
+
+func (m *LunchPlayResponseMessage) GetData() string {
+	if m != nil {
+		return m.Data
+	}
+	return ""
+}
+
+type DinnerPlayRequestMessage struct {
+	Name                 string   `protobuf:"bytes,1,opt,name=name,proto3" json:"name,omitempty"`
+	XXX_NoUnkeyedLiteral struct{} `json:"-"`
+	XXX_unrecognized     []byte   `json:"-"`
+	XXX_sizecache        int32    `json:"-"`
+}
+
+func (m *DinnerPlayRequestMessage) Reset()         { *m = DinnerPlayRequestMessage{} }
+func (m *DinnerPlayRequestMessage) String() string { return proto.CompactTextString(m) }
+func (*DinnerPlayRequestMessage) ProtoMessage()    {}
+func (*DinnerPlayRequestMessage) Descriptor() ([]byte, []int) {
+	return fileDescriptor_5bd7cfea030ce2b7, []int{16}
+}
+
+func (m *DinnerPlayRequestMessage) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_DinnerPlayRequestMessage.Unmarshal(m, b)
+}
+func (m *DinnerPlayRequestMessage) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_DinnerPlayRequestMessage.Marshal(b, m, deterministic)
+}
+func (m *DinnerPlayRequestMessage) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_DinnerPlayRequestMessage.Merge(m, src)
+}
+func (m *DinnerPlayRequestMessage) XXX_Size() int {
+	return xxx_messageInfo_DinnerPlayRequestMessage.Size(m)
+}
+func (m *DinnerPlayRequestMessage) XXX_DiscardUnknown() {
+	xxx_messageInfo_DinnerPlayRequestMessage.DiscardUnknown(m)
+}
+
+var xxx_messageInfo_DinnerPlayRequestMessage proto.InternalMessageInfo
+
+func (m *DinnerPlayRequestMessage) GetName() string {
+	if m != nil {
+		return m.Name
+	}
+	return ""
+}
+
+type DinnerPlayResponseMessage struct {
+	Msg                  string   `protobuf:"bytes,1,opt,name=msg,proto3" json:"msg,omitempty"`
+	Code                 int32    `protobuf:"varint,2,opt,name=code,proto3" json:"code,omitempty"`
+	Data                 string   `protobuf:"bytes,3,opt,name=data,proto3" json:"data,omitempty"`
+	XXX_NoUnkeyedLiteral struct{} `json:"-"`
+	XXX_unrecognized     []byte   `json:"-"`
+	XXX_sizecache        int32    `json:"-"`
+}
+
+func (m *DinnerPlayResponseMessage) Reset()         { *m = DinnerPlayResponseMessage{} }
+func (m *DinnerPlayResponseMessage) String() string { return proto.CompactTextString(m) }
+func (*DinnerPlayResponseMessage) ProtoMessage()    {}
+func (*DinnerPlayResponseMessage) Descriptor() ([]byte, []int) {
+	return fileDescriptor_5bd7cfea030ce2b7, []int{17}
+}
+
+func (m *DinnerPlayResponseMessage) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_DinnerPlayResponseMessage.Unmarshal(m, b)
+}
+func (m *DinnerPlayResponseMessage) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_DinnerPlayResponseMessage.Marshal(b, m, deterministic)
+}
+func (m *DinnerPlayResponseMessage) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_DinnerPlayResponseMessage.Merge(m, src)
+}
+func (m *DinnerPlayResponseMessage) XXX_Size() int {
+	return xxx_messageInfo_DinnerPlayResponseMessage.Size(m)
+}
+func (m *DinnerPlayResponseMessage) XXX_DiscardUnknown() {
+	xxx_messageInfo_DinnerPlayResponseMessage.DiscardUnknown(m)
+}
+
+var xxx_messageInfo_DinnerPlayResponseMessage proto.InternalMessageInfo
+
+func (m *DinnerPlayResponseMessage) GetMsg() string {
+	if m != nil {
+		return m.Msg
+	}
+	return ""
+}
+
+func (m *DinnerPlayResponseMessage) GetCode() int32 {
+	if m != nil {
+		return m.Code
+	}
+	return 0
+}
+
+func (m *DinnerPlayResponseMessage) GetData() string {
+	if m != nil {
+		return m.Data
+	}
+	return ""
+}
+
 func init() {
 	proto.RegisterType((*BreakfastEatRequestMessage)(nil), "greetercenter.BreakfastEatRequestMessage")
 	proto.RegisterType((*BreakfastEatResponseMessage)(nil), "greetercenter.BreakfastEatResponseMessage")
@@ -601,36 +885,47 @@ func init() {
 	proto.RegisterType((*LunchDrinkResponseMessage)(nil), "greetercenter.LunchDrinkResponseMessage")
 	proto.RegisterType((*DinnerDrinkRequestMessage)(nil), "greetercenter.DinnerDrinkRequestMessage")
 	proto.RegisterType((*DinnerDrinkResponseMessage)(nil), "greetercenter.DinnerDrinkResponseMessage")
+	proto.RegisterType((*BreakfastPlayRequestMessage)(nil), "greetercenter.BreakfastPlayRequestMessage")
+	proto.RegisterType((*BreakfastPlayResponseMessage)(nil), "greetercenter.BreakfastPlayResponseMessage")
+	proto.RegisterType((*LunchPlayRequestMessage)(nil), "greetercenter.LunchPlayRequestMessage")
+	proto.RegisterType((*LunchPlayResponseMessage)(nil), "greetercenter.LunchPlayResponseMessage")
+	proto.RegisterType((*DinnerPlayRequestMessage)(nil), "greetercenter.DinnerPlayRequestMessage")
+	proto.RegisterType((*DinnerPlayResponseMessage)(nil), "greetercenter.DinnerPlayResponseMessage")
 }
 
 func init() { proto.RegisterFile("greetercenter/greetercenter.proto", fileDescriptor_5bd7cfea030ce2b7) }
 
 var fileDescriptor_5bd7cfea030ce2b7 = []byte{
-	// 370 bytes of a gzipped FileDescriptorProto
-	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xac, 0x94, 0xdd, 0x4e, 0xf2, 0x40,
-	0x10, 0x86, 0x3f, 0xe0, 0xc3, 0xc8, 0xf8, 0x13, 0x33, 0x07, 0x52, 0xaa, 0x26, 0xd8, 0x44, 0x29,
-	0x8a, 0x60, 0xf0, 0x0e, 0x0c, 0x9c, 0xe9, 0x09, 0xfe, 0xc5, 0x98, 0x98, 0xac, 0x30, 0x56, 0x42,
-	0xd8, 0xe2, 0xee, 0x72, 0x55, 0x5e, 0x84, 0xb7, 0x66, 0x5a, 0x04, 0xba, 0x9b, 0xb6, 0xf6, 0xa0,
-	0x67, 0xd3, 0xcd, 0xfb, 0xce, 0x3c, 0x9d, 0x9d, 0x59, 0x38, 0xf6, 0x04, 0x91, 0x22, 0x31, 0x24,
-	0xae, 0x48, 0x74, 0xb4, 0xaf, 0xf6, 0x4c, 0xf8, 0xca, 0xc7, 0x1d, 0xed, 0xd0, 0xb9, 0x04, 0xfb,
-	0x5a, 0x10, 0x9b, 0xbc, 0x33, 0xa9, 0xfa, 0x4c, 0x0d, 0xe8, 0x73, 0x4e, 0x52, 0xdd, 0x92, 0x94,
-	0xcc, 0x23, 0x44, 0xf8, 0xcf, 0xd9, 0x94, 0xac, 0x42, 0xbd, 0xe0, 0x56, 0x06, 0x61, 0xec, 0x3c,
-	0xc1, 0x81, 0xee, 0x90, 0x33, 0x9f, 0x4b, 0x5a, 0x5a, 0xf6, 0xa0, 0x34, 0x95, 0xde, 0xaf, 0x23,
-	0x08, 0x83, 0x24, 0x43, 0x7f, 0x44, 0x56, 0xb1, 0x5e, 0x70, 0xcb, 0x83, 0x30, 0x0e, 0xce, 0x46,
-	0x4c, 0x31, 0xab, 0xb4, 0x48, 0x1c, 0xc4, 0x4e, 0x0b, 0xf6, 0x6f, 0xe6, 0x7c, 0xf8, 0x91, 0x0d,
-	0xe3, 0x0e, 0xaa, 0x6b, 0x75, 0x5e, 0x08, 0x17, 0x50, 0xed, 0x8d, 0x39, 0x27, 0x91, 0x8d, 0xe1,
-	0x1e, 0xac, 0x88, 0x3c, 0x2f, 0x88, 0x2e, 0x1c, 0xae, 0x1a, 0xdc, 0x13, 0x63, 0x3e, 0xc9, 0x40,
-	0xf2, 0x0c, 0x47, 0xa6, 0x27, 0x2f, 0x9c, 0x36, 0x58, 0x61, 0xa3, 0xb3, 0xa2, 0x3c, 0x40, 0x2d,
-	0xaa, 0xcf, 0x0b, 0xa3, 0x03, 0xb5, 0x45, 0xaf, 0xb3, 0x72, 0x3c, 0x82, 0xad, 0x19, 0x72, 0x02,
-	0xe9, 0x7e, 0x15, 0xa1, 0xd4, 0x67, 0x0a, 0x3d, 0xd8, 0x8e, 0xee, 0x01, 0x36, 0xdb, 0xfa, 0xba,
-	0x25, 0xaf, 0x95, 0x7d, 0x96, 0x2a, 0xd5, 0x40, 0x9d, 0x7f, 0xf8, 0x02, 0x9b, 0xcb, 0x49, 0xc7,
-	0x13, 0xc3, 0x19, 0xbf, 0x30, 0xf6, 0x69, 0xa2, 0xcc, 0x4c, 0xfe, 0x0a, 0x95, 0xd5, 0x08, 0xa3,
-	0x69, 0x4b, 0xd8, 0x05, 0xbb, 0x91, 0xac, 0x33, 0xf2, 0x77, 0xbf, 0x8b, 0x50, 0x0e, 0x2f, 0x00,
-	0xa7, 0xb0, 0xab, 0x8f, 0x28, 0x9e, 0x27, 0xb5, 0x21, 0xe6, 0x8a, 0xed, 0xd6, 0x1f, 0x62, 0xf3,
-	0xc7, 0x18, 0xc0, 0x7a, 0x0c, 0xb1, 0x11, 0xd7, 0x90, 0xb8, 0x32, 0x6e, 0x8a, 0xd0, 0x2c, 0x31,
-	0x82, 0xad, 0xc8, 0x84, 0xa1, 0x1b, 0xdb, 0x95, 0xb8, 0x22, 0xcd, 0x34, 0xa5, 0x51, 0xe5, 0x6d,
-	0x23, 0x7c, 0xb7, 0xaf, 0x7e, 0x02, 0x00, 0x00, 0xff, 0xff, 0x3b, 0xda, 0x2a, 0xdb, 0xdc, 0x05,
-	0x00, 0x00,
+	// 464 bytes of a gzipped FileDescriptorProto
+	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xac, 0x96, 0xcf, 0x6e, 0xda, 0x40,
+	0x10, 0xc6, 0x8b, 0x81, 0xaa, 0x4c, 0x4b, 0x55, 0xcd, 0xa1, 0x18, 0xb7, 0x95, 0xa8, 0xa5, 0x16,
+	0x53, 0xa8, 0x69, 0xe9, 0x1b, 0x54, 0x70, 0x6b, 0xa5, 0x8a, 0x42, 0x9b, 0x28, 0x52, 0xa4, 0x0d,
+	0x6c, 0x1c, 0x42, 0xb0, 0x89, 0xbd, 0x1c, 0xf2, 0x4c, 0x39, 0xe7, 0x9c, 0x57, 0x8b, 0x6c, 0x30,
+	0x78, 0x37, 0x6b, 0x67, 0x0f, 0x7b, 0x5b, 0x56, 0xdf, 0xec, 0xfc, 0x98, 0x3f, 0x9f, 0x0c, 0x1f,
+	0xbd, 0x90, 0x52, 0x46, 0xc3, 0x19, 0xf5, 0x19, 0x0d, 0xfb, 0xdc, 0x2f, 0x77, 0x1d, 0x06, 0x2c,
+	0xc0, 0x3a, 0x77, 0x69, 0x7f, 0x03, 0xeb, 0x67, 0x48, 0xc9, 0xf2, 0x9c, 0x44, 0x6c, 0x44, 0xd8,
+	0x98, 0x5e, 0x6f, 0x68, 0xc4, 0x7e, 0xd3, 0x28, 0x22, 0x1e, 0x45, 0x84, 0x8a, 0x4f, 0x56, 0xd4,
+	0x2c, 0xb5, 0x4a, 0x4e, 0x6d, 0x9c, 0x9c, 0xed, 0xff, 0xf0, 0x8e, 0x8f, 0x88, 0xd6, 0x81, 0x1f,
+	0xd1, 0x34, 0xe4, 0x0d, 0x94, 0x57, 0x91, 0xb7, 0x8b, 0x88, 0x8f, 0xf1, 0x23, 0xb3, 0x60, 0x4e,
+	0x4d, 0xa3, 0x55, 0x72, 0xaa, 0xe3, 0xe4, 0x1c, 0xdf, 0xcd, 0x09, 0x23, 0x66, 0x79, 0xfb, 0x70,
+	0x7c, 0xb6, 0x7b, 0xf0, 0xf6, 0xd7, 0xc6, 0x9f, 0x5d, 0xa8, 0x61, 0xfc, 0x85, 0xc6, 0x41, 0xad,
+	0x0b, 0xe1, 0x2b, 0x34, 0x86, 0x0b, 0xdf, 0xa7, 0xa1, 0x1a, 0xc3, 0x04, 0xcc, 0x8c, 0x5c, 0x17,
+	0xc4, 0x00, 0xde, 0xef, 0x0b, 0x3c, 0x0c, 0x17, 0xfe, 0x52, 0x81, 0xe4, 0x18, 0x3e, 0x88, 0x31,
+	0xba, 0x70, 0x5c, 0x30, 0x93, 0x42, 0xab, 0xa2, 0x4c, 0xa1, 0x99, 0xd5, 0xeb, 0xc2, 0xe8, 0x43,
+	0x73, 0x5b, 0x6b, 0x55, 0x8e, 0x7f, 0x60, 0x71, 0x01, 0xba, 0x40, 0xbe, 0x67, 0xe6, 0xff, 0xcf,
+	0x15, 0xb9, 0x51, 0x40, 0x39, 0xca, 0x74, 0x74, 0x1b, 0xa2, 0x71, 0x60, 0x93, 0x62, 0x2b, 0x82,
+	0x4c, 0x76, 0xbd, 0xd4, 0x0b, 0xe1, 0xa6, 0x6b, 0xa0, 0x48, 0x31, 0x4d, 0x5b, 0xa9, 0x15, 0x63,
+	0x70, 0x6b, 0x40, 0x79, 0x44, 0x18, 0x7a, 0xf0, 0x2a, 0x6b, 0x50, 0xd8, 0x71, 0x79, 0x1f, 0xcc,
+	0xf7, 0x3b, 0xeb, 0x4b, 0xa1, 0x94, 0x03, 0xb5, 0x9f, 0xe1, 0x09, 0xbc, 0x48, 0x2d, 0x08, 0x3f,
+	0x09, 0x91, 0x72, 0x27, 0xb3, 0x3e, 0xe7, 0xca, 0xc4, 0xc7, 0x4f, 0xa1, 0xb6, 0xf7, 0x16, 0x14,
+	0xc3, 0x72, 0x4c, 0xca, 0x6a, 0xe7, 0xeb, 0x84, 0xf7, 0x07, 0xf7, 0x06, 0x54, 0x93, 0xcd, 0xc0,
+	0x15, 0xbc, 0xe6, 0xbd, 0x03, 0xbb, 0x79, 0x65, 0x90, 0xec, 0x9e, 0xd5, 0x7b, 0x42, 0x2c, 0xfe,
+	0x31, 0x02, 0x70, 0xf0, 0x07, 0x6c, 0xcb, 0x0a, 0x22, 0x4b, 0xe3, 0x14, 0x08, 0xc5, 0x14, 0x73,
+	0x78, 0x99, 0x59, 0x7d, 0x74, 0xa4, 0x55, 0x91, 0x25, 0xe9, 0x14, 0x29, 0xc5, 0x0a, 0xde, 0x19,
+	0x50, 0x89, 0x27, 0x18, 0x2f, 0xa1, 0xce, 0xad, 0x37, 0xe6, 0x8e, 0xd1, 0xe3, 0x05, 0xb1, 0xba,
+	0xc5, 0x5a, 0xc9, 0x58, 0xec, 0x37, 0x18, 0xa5, 0xd3, 0x24, 0xc9, 0xd1, 0xce, 0xd7, 0x49, 0xba,
+	0x73, 0xd8, 0x4d, 0x94, 0xcf, 0x93, 0x24, 0x83, 0x53, 0x20, 0x14, 0x52, 0x9c, 0x3d, 0x4f, 0x3e,
+	0x44, 0x7e, 0x3c, 0x04, 0x00, 0x00, 0xff, 0xff, 0x85, 0xa5, 0xab, 0xea, 0xad, 0x08, 0x00, 0x00,
 }
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -923,6 +1218,150 @@ var _Drink_serviceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "DinnerDrink",
 			Handler:    _Drink_DinnerDrink_Handler,
+		},
+	},
+	Streams:  []grpc.StreamDesc{},
+	Metadata: "greetercenter/greetercenter.proto",
+}
+
+// PlayClient is the client API for Play service.
+//
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
+type PlayClient interface {
+	BreakfastPlay(ctx context.Context, in *BreakfastPlayRequestMessage, opts ...grpc.CallOption) (*BreakfastPlayResponseMessage, error)
+	LunchPlay(ctx context.Context, in *LunchPlayRequestMessage, opts ...grpc.CallOption) (*LunchPlayResponseMessage, error)
+	DinnerPlay(ctx context.Context, in *DinnerPlayRequestMessage, opts ...grpc.CallOption) (*DinnerPlayResponseMessage, error)
+}
+
+type playClient struct {
+	cc *grpc.ClientConn
+}
+
+func NewPlayClient(cc *grpc.ClientConn) PlayClient {
+	return &playClient{cc}
+}
+
+func (c *playClient) BreakfastPlay(ctx context.Context, in *BreakfastPlayRequestMessage, opts ...grpc.CallOption) (*BreakfastPlayResponseMessage, error) {
+	out := new(BreakfastPlayResponseMessage)
+	err := c.cc.Invoke(ctx, "/greetercenter.Play/BreakfastPlay", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *playClient) LunchPlay(ctx context.Context, in *LunchPlayRequestMessage, opts ...grpc.CallOption) (*LunchPlayResponseMessage, error) {
+	out := new(LunchPlayResponseMessage)
+	err := c.cc.Invoke(ctx, "/greetercenter.Play/LunchPlay", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *playClient) DinnerPlay(ctx context.Context, in *DinnerPlayRequestMessage, opts ...grpc.CallOption) (*DinnerPlayResponseMessage, error) {
+	out := new(DinnerPlayResponseMessage)
+	err := c.cc.Invoke(ctx, "/greetercenter.Play/DinnerPlay", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+// PlayServer is the server API for Play service.
+type PlayServer interface {
+	BreakfastPlay(context.Context, *BreakfastPlayRequestMessage) (*BreakfastPlayResponseMessage, error)
+	LunchPlay(context.Context, *LunchPlayRequestMessage) (*LunchPlayResponseMessage, error)
+	DinnerPlay(context.Context, *DinnerPlayRequestMessage) (*DinnerPlayResponseMessage, error)
+}
+
+// UnimplementedPlayServer can be embedded to have forward compatible implementations.
+type UnimplementedPlayServer struct {
+}
+
+func (*UnimplementedPlayServer) BreakfastPlay(ctx context.Context, req *BreakfastPlayRequestMessage) (*BreakfastPlayResponseMessage, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method BreakfastPlay not implemented")
+}
+func (*UnimplementedPlayServer) LunchPlay(ctx context.Context, req *LunchPlayRequestMessage) (*LunchPlayResponseMessage, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method LunchPlay not implemented")
+}
+func (*UnimplementedPlayServer) DinnerPlay(ctx context.Context, req *DinnerPlayRequestMessage) (*DinnerPlayResponseMessage, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method DinnerPlay not implemented")
+}
+
+func RegisterPlayServer(s *grpc.Server, srv PlayServer) {
+	s.RegisterService(&_Play_serviceDesc, srv)
+}
+
+func _Play_BreakfastPlay_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(BreakfastPlayRequestMessage)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(PlayServer).BreakfastPlay(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/greetercenter.Play/BreakfastPlay",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(PlayServer).BreakfastPlay(ctx, req.(*BreakfastPlayRequestMessage))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _Play_LunchPlay_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(LunchPlayRequestMessage)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(PlayServer).LunchPlay(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/greetercenter.Play/LunchPlay",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(PlayServer).LunchPlay(ctx, req.(*LunchPlayRequestMessage))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _Play_DinnerPlay_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(DinnerPlayRequestMessage)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(PlayServer).DinnerPlay(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/greetercenter.Play/DinnerPlay",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(PlayServer).DinnerPlay(ctx, req.(*DinnerPlayRequestMessage))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+var _Play_serviceDesc = grpc.ServiceDesc{
+	ServiceName: "greetercenter.Play",
+	HandlerType: (*PlayServer)(nil),
+	Methods: []grpc.MethodDesc{
+		{
+			MethodName: "BreakfastPlay",
+			Handler:    _Play_BreakfastPlay_Handler,
+		},
+		{
+			MethodName: "LunchPlay",
+			Handler:    _Play_LunchPlay_Handler,
+		},
+		{
+			MethodName: "DinnerPlay",
+			Handler:    _Play_DinnerPlay_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

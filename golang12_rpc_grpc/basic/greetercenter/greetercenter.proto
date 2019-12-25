@@ -31,7 +31,7 @@ message DinnerEatResponseMessage {
 }
 
 message BreakfastDrinkRequestMessage {
-	string name = 1;
+	 string name = 1;
 }
 
 message BreakfastDrinkResponseMessage {
@@ -59,6 +59,38 @@ message DinnerDrinkResponseMessage {
 	string data=3;
 }
 
+message BreakfastPlayRequestMessage {
+	string name = 1;
+}
+
+message BreakfastPlayResponseMessage {
+	string msg = 1;
+	int32 code=2;
+	string data=3;
+}
+
+message LunchPlayRequestMessage {
+	string name = 1;
+}
+/*
+*午餐前活动应答结构体
+*/
+message LunchPlayResponseMessage {
+	string msg = 1;
+	int32 code=2;
+	string data=3;
+}
+
+message DinnerPlayRequestMessage {
+	string name = 1;
+}
+
+message DinnerPlayResponseMessage {
+	string msg = 1;
+	int32 code=2;
+	string data=3;
+}
+
 service Eat {
 	rpc BreakfastEat(BreakfastEatRequestMessage) returns (BreakfastEatResponseMessage) {}
 	rpc LunchEat(LunchEatRequestMessage) returns (LunchEatResponseMessage) {}
@@ -69,4 +101,10 @@ service Drink {
 	rpc BreakfastDrink(BreakfastDrinkRequestMessage) returns (BreakfastDrinkResponseMessage) {}
 	rpc LunchDrink(LunchDrinkRequestMessage) returns (LunchDrinkResponseMessage) {}
 	rpc DinnerDrink(DinnerDrinkRequestMessage) returns (DinnerDrinkResponseMessage) {}
+}
+
+service Play {
+	rpc BreakfastPlay(BreakfastPlayRequestMessage) returns (BreakfastPlayResponseMessage) {}
+	rpc LunchPlay(LunchPlayRequestMessage) returns (LunchPlayResponseMessage) {}
+	rpc DinnerPlay(DinnerPlayRequestMessage) returns (DinnerPlayResponseMessage) {}
 }
