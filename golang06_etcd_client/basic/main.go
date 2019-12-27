@@ -9,7 +9,7 @@ import (
 
 func main() {
 	client, _ := clientv3.New(clientv3.Config{
-		Endpoints:   []string{"192.168.172.5:2379", "192.168.172.6:2379", "192.168.172.7:2379"},
+		Endpoints:   []string{"192.168.1.101:2379", "192.168.1.102:2379", "192.168.1.103:2379"},
 		DialTimeout: 10 * time.Second,
 	})
 	defer client.Close()
