@@ -1,4 +1,4 @@
-// main.go
+// apigateway.go
 package main
 import (
 	"flag"
