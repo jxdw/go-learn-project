@@ -1,27 +1,27 @@
 package main
 
 import (
+	"context"
 	"fmt"
-	dis "go-learn-project/golang06_etcd_client/basic/discovery"
-	"log"
+	"github.com/coreos/etcd/clientv3"
 	"time"
 )
 
 func main() {
-
-	m, err := dis.NewMaster([]string{
-		"http://127.0.0.1:2379",
-	}, "/services/")
-
+	client, _ := clientv3.New(clientv3.Config{
+		Endpoints:   []string{"192.168.172.5:2379", "192.168.172.6:2379", "192.168.172.7:2379"},
+		DialTimeout: 10 * time.Second,
+	})
+	defer client.Close()
+	kv:=clientv3.NewKV(client);
+	//ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	resp, err := kv.Get(context.TODO(), "/prometheus/job",clientv3.WithPrefix())
+	///cancel()
 	if err != nil {
-		log.Fatal(err)
+		println(err)
 	}
 
-	for {
-		for k, v := range  m.Nodes {
-			fmt.Printf("node:%s, ip=%s\n", k, v.Info.IpAddress)
-		}
-		fmt.Printf("nodes num = %d\n",len(m.Nodes))
-		time.Sleep(time.Second * 5)
+	for _, ev := range resp.Kvs {
+		fmt.Printf("%s : %s\n", ev.Key, ev.Value)
 	}
 }
