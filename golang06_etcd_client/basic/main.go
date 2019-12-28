@@ -28,7 +28,7 @@ func main() {
 	}
 	kv:=clientv3.NewKV(client);
 	//ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
-	resp, err := kv.Get(context.TODO(), "/prometheus/job",clientv3.WithPrefix())
+	resp, err := kv.Get(context.TODO(), "/",clientv3.WithPrefix())
 	///cancel()
 	if err != nil {
 		println(err)
