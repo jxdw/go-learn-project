@@ -10,8 +10,6 @@ import (
 	"net"
 )
 
-
-
 func main() {
 	lis, err := net.Listen("tcp", "10.3.20.236:8083")
 	if err != nil {
@@ -25,6 +23,7 @@ func main() {
 	greetercenter.RegisterDrinkServer(s,&drinkService)
 	greetercenter.RegisterPlayServer(s,&playService)
 	reflection.Register(s)
+
 	if err := s.Serve(lis); err != nil {
 		log.Fatalf("failed to serve: %v", err)
 	}
