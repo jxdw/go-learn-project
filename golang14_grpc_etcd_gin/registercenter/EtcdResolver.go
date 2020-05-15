@@ -57,7 +57,7 @@ func (r etcdResolver) Scheme() string {
 实现resolver.Resolver接口的ResolveNow方法
 */
 func (r etcdResolver) ResolveNow(rn resolver.ResolveNowOption) {
-	log.Println("ResolveNow") // TODO check
+	log.Println("ResolveNow")
 }
 
 /**
