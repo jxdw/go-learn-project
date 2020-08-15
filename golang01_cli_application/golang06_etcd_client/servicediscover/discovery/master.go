@@ -17,9 +17,9 @@ type Master struct {
 
 //node is a client
 type Node struct {
-	State	bool
-	Key		string
-	Info    ServiceInfo
+	State bool
+	Key   string
+	Info  ServiceInfo
 }
 
 
@@ -34,7 +34,7 @@ func NewMaster(endpoints []string, watchPath string) (*Master,error) {
 		return nil,err
 	}
 
-	master := &Master {
+	master := &Master{
 		Path:	watchPath,
 		Nodes:	make(map[string]*Node),
 		Client: cli,

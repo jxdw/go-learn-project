@@ -14,11 +14,11 @@ type ServiceInfo struct {
 }
 
 type Service struct {
-	Name string
-	Info ServiceInfo
-	stop chan error
+	Name    string
+	Info    ServiceInfo
+	stop    chan error
 	leaseID clientv3.LeaseID
-	client *clientv3.Client
+	client  *clientv3.Client
 }
 
 func NewService(name string,info ServiceInfo,endpoints []string)(*Service,error){
@@ -27,7 +27,7 @@ func NewService(name string,info ServiceInfo,endpoints []string)(*Service,error)
 		log.Fatal(err)
 		return nil, err
 	}
-	return &Service{Name:name,Info:info,stop:make(chan error),client:cli},nil
+	return &Service{Name: name,Info:info,stop:make(chan error),client:cli},nil
 }
 
 func (s *Service)  Start() error {

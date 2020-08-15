@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	dis "go-learn-project/golang06_etcd_client/servicediscover/discovery"
+	dis "go-learn-project/golang01_cli_application/golang06_etcd_client/servicediscover/discovery"
 	"log"
 	"time"
 )
@@ -10,7 +10,7 @@ import (
 func main() {
 
 	serviceName := "s-test"
-	serviceInfo := dis.ServiceInfo{IpAddress:"192.168.1.105"}
+	serviceInfo := dis.ServiceInfo{IpAddress: "192.168.1.105"}
 
 	s, err := dis.NewService(serviceName, serviceInfo,[]string {
 		"http://127.0.0.1:2379",

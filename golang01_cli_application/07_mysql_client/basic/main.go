@@ -1,7 +1,8 @@
 package main
 
 import
-("database/sql"
+(
+	"database/sql"
 	"fmt"
 	_ "github.com/go-sql-driver/mysql")
 
