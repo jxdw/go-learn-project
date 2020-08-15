@@ -5,7 +5,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/ext"
-	"go-learn-project/golang01_middleware_sdk/golang11_trace_jaeger/jaeger_gin_example/util"
+	"go-learn-project/golang01_middleware_sdk/11_trace_jaeger/jaeger_gin_example/util"
 	"io/ioutil"
 	"log"
 	"net/http"

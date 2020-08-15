@@ -1,7 +1,7 @@
 package main
 
 import (
-"fmt"
+	"fmt"
 )
 func a() int64 {
 	fmt.Println("calling a()")

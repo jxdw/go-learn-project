@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	dis "go-learn-project/golang01_middleware_sdk/golang06_etcd_client/servicediscover/discovery"
+	dis "go-learn-project/golang01_middleware_sdk/06_etcd_client/servicediscover/discovery"
 	"log"
 	"time"
 )

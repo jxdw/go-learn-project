@@ -3,7 +3,7 @@ package main
 import (
 	"bytes"
 	"github.com/gin-gonic/gin"
-	"go-learn-project/golang01_middleware_sdk/golang11_trace_jaeger/jaeger_gin_example/util"
+	"go-learn-project/golang01_middleware_sdk/11_trace_jaeger/jaeger_gin_example/util"
 	_ "go-learn-project/golang03_http_application/router/docs"
 	"net/http"
 )
