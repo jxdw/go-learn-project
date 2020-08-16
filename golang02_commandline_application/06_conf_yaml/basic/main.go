@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go-learn-project/golang02_cli_application/06_conf_yaml/basic/conf"
+	"go-learn-project/golang02_commandline_application/06_conf_yaml/basic/conf"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
 	"log"
