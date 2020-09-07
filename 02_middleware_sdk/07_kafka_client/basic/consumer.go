@@ -60,19 +60,19 @@ func clusterConsumer(wg *sync.WaitGroup, brokers, topics []string, groupId strin
 
 	// consume messages, watch signals
 	var successes int
-Loop:
-	for {
-		select {
-		case msg, ok := <-consumer.Messages():
-			if ok {
-				fmt.Fprintf(os.Stdout, "%s:%s/%d/%d\t%s\t%s\n", groupId, msg.Topic, msg.Partition,
-					msg.Offset, msg.Key, msg.Value)
-				consumer.MarkOffset(msg, "") // mark message as processed
-				successes++
+	Loop:
+		for {
+			select {
+			case msg, ok := <-consumer.Messages():
+				if ok {
+					fmt.Fprintf(os.Stdout, "%s:%s/%d/%d\t%s\t%s\n", groupId, msg.Topic, msg.Partition,
+						msg.Offset, msg.Key, msg.Value)
+					consumer.MarkOffset(msg, "") // mark message as processed
+					successes++
+				}
+			case <-signals:
+				break Loop
 			}
-		case <-signals:
-			break Loop
 		}
-	}
 	fmt.Fprintf(os.Stdout, "%s consume %d messages \n", groupId, successes)
 }

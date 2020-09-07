@@ -7,7 +7,6 @@ import (
 )
 
 func main() {
-
 	buf:=make([]byte,512);
 	var err error
 	buf,err=ioutil.ReadFile(os.Args[1]+"/test.txt")
