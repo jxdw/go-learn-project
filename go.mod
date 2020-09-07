@@ -16,12 +16,12 @@ require (
 	github.com/go-redis/redis v6.15.6+incompatible
 	github.com/go-sql-driver/mysql v1.4.1
 	github.com/golang/protobuf v1.3.2
+	github.com/grpc-ecosystem/go-grpc-middleware v1.2.0
 	github.com/leodido/go-urn v1.2.0 // indirect
 	github.com/mailru/easyjson v0.7.0 // indirect
 	github.com/mattn/go-isatty v0.0.11 // indirect
 	github.com/micro/go-micro v1.16.0
 	github.com/micro/go-plugins v1.5.1
-	github.com/opentracing-contrib/go-stdlib v0.0.0-20190519235532-cf7a6c988dc9 // indirect
 	github.com/opentracing/opentracing-go v1.1.0
 	github.com/prometheus/client_golang v1.2.1
 	github.com/robfig/cron v1.2.0
