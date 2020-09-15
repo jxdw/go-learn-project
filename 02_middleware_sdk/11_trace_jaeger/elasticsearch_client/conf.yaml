@@ -1,4 +1,4 @@
-indexprefix: logstash-bbs-2020.05.
+indexprefix: logstash-publicfund-2020.05.
 hostAddress: ["http://192.168.172.5:9200/","http://192.168.172.6:9200/","http://192.168.172.7:9200/"]
-maxInt: 28
-minInt: 11
+maxInt: 32
+minInt: 28
