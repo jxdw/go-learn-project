@@ -1,0 +1,484 @@
+2020-09-18T17:59:47.265+0800	[34mINFO[0m	register instance namespaceId:<a4495738-12c0-42b3-a036-82d3002bdd7a>,serviceName:<DEFAULT_GROUP@@demo.go> with instance:<{"valid":false,"marked":false,"instanceId":"","port":8848,"ip":"192.168.172.9","weight":10,"metadata":{},"clusterName":"zwt","serviceName":"","enabled":true,"healthy":true,"ephemeral":true}>
+2020-09-18T17:59:47.268+0800	[34mINFO[0m	udp server start, port: 55810
+2020-09-18T17:59:47.470+0800	[34mINFO[0m	adding beat: <{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo.go","cluster":"zwt","metadata":{},"scheduled":false}> to beat map
+2020-09-18T17:59:47.471+0800	[34mINFO[0m	namespaceId:<a4495738-12c0-42b3-a036-82d3002bdd7a> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T17:59:47.478+0800	[34mINFO[0m	InitLocalIp, LocalIp:10.3.20.215
+2020-09-18T17:59:47.517+0800	[34mINFO[0m	service not found in cache DEFAULT_GROUP@@demo.go@@zwt
+2020-09-18T18:02:22.497+0800	[34mINFO[0m	register instance namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced>,serviceName:<DEFAULT_GROUP@@demo2.go> with instance:<{"valid":false,"marked":false,"instanceId":"","port":8848,"ip":"192.168.172.9","weight":10,"metadata":{},"clusterName":"zwt","serviceName":"","enabled":true,"healthy":true,"ephemeral":true}>
+2020-09-18T18:02:22.500+0800	[34mINFO[0m	udp server start, port: 55939
+2020-09-18T18:02:22.539+0800	[34mINFO[0m	adding beat: <{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}> to beat map
+2020-09-18T18:02:22.539+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:02:22.541+0800	[34mINFO[0m	InitLocalIp, LocalIp:10.3.20.215
+2020-09-18T18:02:22.568+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:22.568+0800	[34mINFO[0m	service not found in cache DEFAULT_GROUP@@demo.go@@zwt
+2020-09-18T18:02:23.514+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:23.514+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:24.515+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:24.515+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:25.514+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:25.514+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:26.514+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:26.514+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:27.514+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:27.514+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:27.557+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:02:28.514+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:28.514+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:29.546+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:29.546+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:30.515+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:30.515+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:31.515+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:31.515+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:32.520+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:32.520+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:32.573+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:02:33.516+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:33.516+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:34.516+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:34.516+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:35.515+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:35.515+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:36.516+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:36.516+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:37.514+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:37.514+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:37.589+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:02:38.516+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:38.516+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:39.519+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:39.519+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:40.519+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:40.519+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:41.519+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:41.519+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:42.520+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:42.520+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:42.605+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:02:43.519+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:43.519+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:44.524+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:44.524+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:45.521+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:45.521+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:46.518+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:46.518+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:47.519+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:47.519+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:47.622+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:02:48.519+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:48.519+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:49.520+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:49.520+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:50.519+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:50.519+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:51.520+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:51.520+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:52.530+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:52.530+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:52.639+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:02:53.528+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:53.528+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:54.567+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:54.567+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:55.566+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:55.566+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:56.568+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:56.568+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:57.567+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:57.567+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:57.655+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:02:58.568+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:58.568+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:02:59.568+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:02:59.568+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:00.572+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:00.572+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:01.570+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:01.570+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:02.567+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:02.567+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:02.672+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:03:03.567+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:03.567+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:04.580+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:04.580+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:05.569+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:05.569+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:06.569+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:06.569+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:07.568+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:07.568+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:07.689+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:03:08.568+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:08.568+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:09.570+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:09.570+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:10.569+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:10.569+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:11.570+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:11.570+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:12.568+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:12.568+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:12.706+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:03:13.569+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:13.569+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:14.570+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:14.570+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:15.569+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:15.569+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:16.569+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:16.569+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:17.569+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:17.569+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:17.722+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:03:18.569+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:18.569+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:19.572+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:19.572+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:20.572+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:20.572+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:21.572+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:21.572+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:22.571+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:22.571+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:22.749+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:03:23.570+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:23.570+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:24.571+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:24.571+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:25.572+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:25.572+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:26.572+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:26.572+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:27.570+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:27.570+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:27.765+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:03:28.570+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:28.570+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:29.572+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:29.572+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:30.574+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:30.574+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:31.575+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:31.575+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:32.609+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:32.609+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:32.783+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:03:33.574+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:33.574+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:34.575+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:34.575+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:35.574+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:35.574+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:36.573+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:36.573+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:37.630+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:37.630+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:37.806+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:03:38.572+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:38.572+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:39.575+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:39.575+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:40.579+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:40.579+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:41.577+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:41.577+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:42.576+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:42.576+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:42.823+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:03:43.582+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:43.582+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:44.577+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:44.577+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:45.579+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:45.580+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:46.599+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:46.599+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:47.587+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:47.587+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:47.884+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:03:48.605+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:48.605+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:49.590+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:49.591+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:50.591+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:50.591+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:51.589+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:51.589+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:52.588+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:52.588+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:52.901+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:03:53.587+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:53.588+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:54.588+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:54.588+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:55.587+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:55.587+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:56.588+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:56.588+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:57.588+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:57.588+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:57.918+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:03:58.589+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:58.590+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:03:59.590+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:03:59.590+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:00.588+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:00.588+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:01.588+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:01.588+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:02.590+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:02.591+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:02.935+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:04:03.589+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:03.589+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:04.590+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:04.590+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:05.589+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:05.589+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:06.591+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:06.591+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:07.589+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:07.589+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:07.951+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:04:08.589+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:08.589+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:09.592+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:09.592+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:10.592+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:10.592+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:11.592+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:11.592+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:12.592+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:12.592+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:12.973+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:04:13.590+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:13.590+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:14.590+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:14.590+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:15.590+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:15.590+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:16.589+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:16.589+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:17.591+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:17.591+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:17.989+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:04:18.591+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:18.591+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:19.591+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:19.592+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:20.592+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:20.592+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:21.590+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:21.591+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:22.590+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:22.590+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:23.006+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:04:23.592+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:23.592+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:24.591+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:24.592+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:25.592+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:25.592+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:26.591+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:26.591+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:27.591+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:27.592+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:28.023+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:04:28.591+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:28.591+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:29.651+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:29.651+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:30.627+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:30.627+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:31.625+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:31.625+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:32.626+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:32.626+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:33.042+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:04:33.625+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:33.625+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:34.627+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:34.627+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:35.626+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:35.626+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:36.628+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:36.628+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:37.626+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:37.626+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:38.057+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:04:38.628+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:38.629+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:39.628+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:39.628+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:40.629+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:40.629+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:41.630+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:41.630+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:42.630+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:42.630+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:43.074+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:04:43.643+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:43.643+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:44.635+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:44.635+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:45.633+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:45.634+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:46.634+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:46.634+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:47.634+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:47.634+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:48.089+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:04:48.633+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:48.634+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:49.635+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:49.635+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:50.635+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:50.635+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:51.637+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:51.637+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:52.634+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:52.634+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:53.104+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:04:53.636+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:53.636+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:54.641+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:54.641+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:55.649+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:55.649+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:56.637+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:56.637+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:57.637+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:57.637+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:58.120+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:04:58.637+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:58.637+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:04:59.638+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:04:59.639+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:00.637+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:00.637+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:01.637+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:01.637+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:02.639+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:02.640+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:03.137+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:05:03.639+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:03.639+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:04.640+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:04.640+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:05.638+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:05.638+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:06.638+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:06.638+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:07.638+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:07.638+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:08.152+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:05:08.639+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:08.639+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:09.659+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:09.659+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:10.642+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:10.642+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:11.641+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:11.641+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:12.641+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:12.641+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:13.168+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:05:13.641+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:13.641+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:14.641+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:14.641+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:15.641+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:15.641+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:16.641+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:16.641+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:17.644+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:17.644+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:18.183+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:05:18.641+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:18.641+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:19.644+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:19.644+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:20.642+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:20.642+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:21.644+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:21.644+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:22.643+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:22.644+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:23.201+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:05:23.643+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:23.643+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:24.645+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:24.645+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:25.643+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:25.643+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:26.644+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:26.644+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:27.642+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:27.642+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:28.218+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:05:28.645+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:28.645+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:29.646+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:29.646+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:30.645+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:30.645+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:31.645+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:31.645+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:32.649+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:32.649+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:33.234+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:05:33.645+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:33.645+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:34.646+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:34.646+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:35.646+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:35.646+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:36.687+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:36.687+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:37.645+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:37.645+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:38.249+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:05:38.645+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:38.645+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:39.717+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:39.717+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:40.646+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:40.646+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:41.647+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:41.647+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:42.646+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:42.646+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:43.267+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:05:43.651+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:43.651+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:44.647+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:44.647+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:45.647+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:45.647+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:46.647+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:46.647+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:47.648+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:47.648+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:48.285+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:05:48.648+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:48.648+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:49.649+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:49.649+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:50.648+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:50.648+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:51.648+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:51.648+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:52.648+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:52.648+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go
+2020-09-18T18:05:53.311+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:05:55.661+0800	[34mINFO[0m	register instance namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced>,serviceName:<DEFAULT_GROUP@@demo2.go> with instance:<{"valid":false,"marked":false,"instanceId":"","port":8848,"ip":"192.168.172.9","weight":10,"metadata":{},"clusterName":"zwt","serviceName":"","enabled":true,"healthy":true,"ephemeral":true}>
+2020-09-18T18:05:55.672+0800	[34mINFO[0m	udp server start, port: 55628
+2020-09-18T18:05:55.702+0800	[34mINFO[0m	adding beat: <{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}> to beat map
+2020-09-18T18:05:55.702+0800	[34mINFO[0m	namespaceId:<0cf7435e-262c-4827-86d2-474408a0dced> sending beat to server:<{"ip":"192.168.172.9","port":8848,"weight":10,"serviceName":"DEFAULT_GROUP@@demo2.go","cluster":"zwt","metadata":{},"scheduled":false}>
+2020-09-18T18:05:55.706+0800	[34mINFO[0m	InitLocalIp, LocalIp:10.3.20.215
+2020-09-18T18:05:55.732+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:55.732+0800	[34mINFO[0m	service not found in cache DEFAULT_GROUP@@demo.go@@zwt
+2020-09-18T18:05:56.678+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@demo.go","clusters":"zwt","hosts":[]}
+2020-09-18T18:05:56.678+0800	[31mERROR[0m	do not have useful host, ignore it, name:DEFAULT_GROUP@@demo.go

@@ -22,6 +22,7 @@ require (
 	github.com/mattn/go-isatty v0.0.11 // indirect
 	github.com/micro/go-micro v1.16.0
 	github.com/micro/go-plugins v1.5.1
+	github.com/nacos-group/nacos-sdk-go v1.0.0
 	github.com/opentracing/opentracing-go v1.1.0
 	github.com/prometheus/client_golang v1.2.1
 	github.com/robfig/cron v1.2.0
