@@ -5,7 +5,7 @@
 - 代理辅助: https://goproxy.cn
 
 # <h3>02_middleware_sdk使用概述</h3>
-主要记录应用开发中常用的13种中间件的client的用法。
+主要记录应用开发中常用的13个中间件的client的用法。
 ## <h4>2.1 依赖中间件</h4>
 - 缓存技术: redis
 - 存储技术: mysql
@@ -14,6 +14,7 @@
 - 链路监控: jaeger(elasticsearch做存储)
 - 应用监控: prometheus
 - 任务调度: etcd
+- 配置管理： nacos
 
 ## <h4>2.2 使用的框架</h4>
 - config框架:yaml、viper
@@ -25,7 +26,8 @@
 - db库框架:mysql go client(https://github.com/go-sql-driver/mysql) <br>
 - MQ框架:rabbitmq go client(https://github.com/streadway/amqp) <br>
          kafka go client https://github.com/Shopify/sarama
-- SD框架：etcd go client(https://github.com/coreos/etcd
+- SD框架：etcd go client( https://github.com/coreos/etcd <br>
+         nacos go client( http://github.com/nacos-group/nacos-sdk-go )
 - trace框架:jaegar go client(https://github.com/uber/jaeger-client-go
 - metrics框架:promtheus go client(https://github.com/prometheus/client_golang)
 - distribute事务框架:seata go client
@@ -40,4 +42,4 @@
 - jaeger可视化工具:jeager ui
 - prometheus可视化工具:prometheus
 - 接口文档工具:swag
-- 
+

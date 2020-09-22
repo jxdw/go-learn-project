@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"github.com/gin-gonic/gin"
 	"go-learn-project/02_middleware_sdk/11_trace_jaeger/jaeger_gin_example/util"
-	_ "go-learn-project/04_http_application/router/docs"
+	_ "go-learn-project/02_middleware_sdk/14_http_framework/router/docs"
 	"net/http"
 )
 

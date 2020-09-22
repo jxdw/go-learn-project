@@ -3,8 +3,10 @@ package main
 import (
 	"fmt"
 	"github.com/nacos-group/nacos-sdk-go/clients"
+	"github.com/nacos-group/nacos-sdk-go/clients/config_client"
 	"github.com/nacos-group/nacos-sdk-go/common/constant"
 	"github.com/nacos-group/nacos-sdk-go/vo"
+	"net/http"
 )
 
 //创建一个真正的注册中心
@@ -23,7 +25,22 @@ func init()  {
 		CacheDir: "\\data\\server\\demoservice",
 		//Username:			 "nacos",
 		//Password:			 "nacos",
+		LogLevel:            "warn",
 	}
+	configclient, err := clients.CreateConfigClient(map[string]interface{}{
+		"serverConfigs": serverconfig,
+		"clientConfig":  clientconfig,
+	})
+
+
+	configFile,err:=configclient.GetConfig(vo.ConfigParam{
+		DataId: "test-data",
+		Group:  "test-group",
+	})
+
+	fmt.Println("config file  content is :"+configFile)
+
+	go listenConfig(configclient)
 
 	namingClient, err := clients.CreateNamingClient(map[string]interface{}{
 		"serverConfigs":serverconfig ,
@@ -33,8 +50,7 @@ func init()  {
 	if err != nil {
 		panic(err)
 	}
-
-	param:=vo.RegisterInstanceParam{
+	var param = vo.RegisterInstanceParam{
 		Ip:          "10.3.20.215",
 		Port:        18848,
 		ServiceName: "go_demo_service",
@@ -43,6 +59,7 @@ func init()  {
 		Enable:      true,
 		Healthy:     true,
 		Ephemeral:   true,
+		Metadata:    map[string]string{"preserved.heart.beat.interval": "100000000000",},
 	}
 	success,err:=namingClient.RegisterInstance(param)
 
@@ -58,23 +75,11 @@ func init()  {
 		ServiceName: "go_demo_service",
 	})
 	fmt.Println("service is ",service)
+}
 
-
-	configclient, err := clients.CreateConfigClient(map[string]interface{}{
-		"serverConfigs": serverconfig,
-		"clientConfig":  clientconfig,
-	})
-
-
-	configFile,err:=configclient.GetConfig(vo.ConfigParam{
-		DataId: "test-data",
-		Group:  "test-group",
-	})
-
-	fmt.Println("config file  content is :"+configFile)
-
-	for success {
-		err = configclient.ListenConfig(vo.ConfigParam{
+func listenConfig(client config_client.IConfigClient) {
+	for  {
+		err := client.ListenConfig(vo.ConfigParam{
 			DataId: "test-data",
 			Group:  "test-group",
 			OnChange: func(namespace, group, dataId, data string) {
@@ -85,9 +90,14 @@ func init()  {
 			fmt.Println("error is ",err)
 		}
 	}
-
 }
 
 func main() {
+	http.HandleFunc("/",HelloworldHander)
+	http.ListenAndServe("10.3.20.215:18848" ,nil)
+}
 
+func HelloworldHander(writer http.ResponseWriter, request *http.Request) {
+	message:="hello world"
+	writer.Write([]byte(message))
 }
