@@ -14,7 +14,7 @@ func main() {
 	// 用 TLS 启动服务器，因为我们运行的是 http/2，它必须是与 TLS 一起运行。
 	// 确切地说，如何使用 TLS 连接运行 HTTP/1.1 服务器。
 	log.Printf("Serving on https://0.0.0.0:8000")
-	log.Fatal(srv.ListenAndServeTLS("F:\\go\\interview\\go-learn-project\\01_development_kit\\06_http2_server\\h2_server.crt", "F:\\go\\interview\\go-learn-project\\01_development_kit\\06_http2_server\\h2_server.key"))
+	log.Fatal(srv.ListenAndServeTLS("h2_server.crt", "h2_server.key"))
 }
 
 func handle(w http.ResponseWriter, r *http.Request) {
