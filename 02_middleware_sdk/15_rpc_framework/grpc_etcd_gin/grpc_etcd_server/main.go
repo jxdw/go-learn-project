@@ -5,12 +5,14 @@ import (
 	"go-learn-project/02_middleware_sdk/15_rpc_framework/grpc_etcd_gin/proto"
 	"go-learn-project/02_middleware_sdk/15_rpc_framework/grpc_etcd_gin/registercenter"
 	"google.golang.org/grpc"
+	"google.golang.org/grpc/keepalive"
 	"google.golang.org/grpc/reflection"
 	"log"
 	"net"
 	"os"
 	"os/signal"
 	"syscall"
+	"time"
 )
 
 type Greeter  struct{}
@@ -41,7 +43,16 @@ func main() {
 			os.Exit(0)
 		}
 	}()
-	s:=grpc.NewServer()
+	var kasp = keepalive.ServerParameters{
+		MaxConnectionIdle:     15 * time.Second, // If a client is idle for 15 seconds, send a GOAWAY
+		MaxConnectionAge:      30 * time.Second, // If any connection is alive for more than 30 seconds, send a GOAWAY
+		MaxConnectionAgeGrace: 5 * time.Second,  // Allow 5 seconds for pending RPCs to complete before forcibly closing connections
+		Time:                  5 * time.Second,  // Ping the client if it is idle for 5 seconds to ensure the connection is still active
+		Timeout:               1 * time.Second,  // Wait 1 second for the ping ack before assuming the connection is dead
+	}
+	s:=grpc.NewServer(grpc.MaxSendMsgSize(10*1024*1024),
+		grpc.MaxRecvMsgSize(10*1024*1024),
+		grpc.KeepaliveParams(kasp));
 	greeter:=Greeter{}
 	protocol.RegisterGreeterServer(s,&greeter)
 	reflection.Register(s)

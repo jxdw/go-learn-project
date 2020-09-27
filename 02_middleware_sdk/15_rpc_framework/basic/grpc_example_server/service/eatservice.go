@@ -10,7 +10,7 @@ type EatService struct{}
 
 func (greeter *EatService) BreakfastEat(ctx context.Context, req *greetercenter.BreakfastEatRequestMessage) (*greetercenter.BreakfastEatResponseMessage, error) {
 	log.Print("BreakfastEat received ")
-	responseMessage := greetercenter.BreakfastEatResponseMessage{Msg: "breakfast success", Code: 200, Data: "hello " + req.Name}
+	responseMessage := greetercenter.BreakfastEatResponseMessage{Msg: "breakfast success", Code: 200, Data: "hello 123456 " + req.Name}
 	return &responseMessage, nil
 }
 func (greeter *EatService) LunchEat(ctx context.Context, req *greetercenter.LunchEatRequestMessage) (*greetercenter.LunchEatResponseMessage, error) {

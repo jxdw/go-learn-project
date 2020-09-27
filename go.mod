@@ -7,7 +7,7 @@ require (
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
 	github.com/bsm/sarama-cluster v2.1.15+incompatible
 	github.com/codahale/hdrhistogram v0.0.0-20161010025455-3a0bb77429bd // indirect
-	github.com/coreos/etcd v3.3.25+incompatible
+	github.com/coreos/etcd v3.3.22+incompatible
 	github.com/gin-gonic/gin v1.5.0
 	github.com/go-openapi/jsonreference v0.19.3 // indirect
 	github.com/go-openapi/spec v0.19.5 // indirect
@@ -32,7 +32,7 @@ require (
 	github.com/swaggo/swag v1.6.3
 	github.com/uber/jaeger-client-go v2.20.1+incompatible
 	github.com/uber/jaeger-lib v2.2.0+incompatible // indirect
-	google.golang.org/grpc v1.27.0
+	google.golang.org/grpc v1.26.0
 	gopkg.in/go-playground/validator.v9 v9.30.2 // indirect
 	gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df
 	gopkg.in/olivere/elastic.v5 v5.0.82
