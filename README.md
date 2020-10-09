@@ -1,12 +1,12 @@
-# <h3>01_development_kit使用概述</h3>
+# <h3>工程说明概述</h3>
 ## <h4>1.1 golang版本</h4>
 - golang 1.14.3
-- 开发工具: goland2019.3 (https://download.jetbrains.8686c.com/go/goland-2019.3.exe)
+- 开发工具: goland2019.3
 - 代理辅助: https://goproxy.cn
 
-# <h3>02_middleware_sdk使用概述</h3>
+## <h4>1.2 01_middleware_sdk使用概述</h4>
 主要记录应用开发中常用的13个中间件的client的用法。
-## <h4>2.1 依赖中间件</h4>
+### <h5>1.2.1 依赖中间件</h5>
 - 缓存技术: redis
 - 存储技术: mysql
 - 消息队列: kafka、rabbitmq（延迟队列）
@@ -16,7 +16,7 @@
 - 任务调度: etcd
 - 配置管理： nacos
 
-## <h4>2.2 使用的框架</h4>
+### <h5>1.2.2 使用的框架</h5>
 - config框架:yaml、viper
 - MVC框架:gin
 - rpc框架:grpc
@@ -33,7 +33,7 @@
 - distribute事务框架:seata go client
 - jwt框架:
 
-## <h4>2.3 工具依赖</h4>
+### <h5>1.2.3 工具依赖</h5>
 - http调试工具: postman、
 - grpc框架调试工具:grpcui、grpcurl
 - redis可视化工具:redis desktop manger
