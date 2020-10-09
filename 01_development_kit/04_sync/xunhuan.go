@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-var messages chan string = make(chan string)
+var messages chan string = make(chan string,1000)
 
 func main() {
 	go setMessage()
