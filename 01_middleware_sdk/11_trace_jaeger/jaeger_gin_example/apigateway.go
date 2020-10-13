@@ -20,9 +20,10 @@ func main() {
 }
 
 func httpRequest(context *gin.Context) {
-	result, _ :=httpClient("http://10.3.20.236:8082/someGet?one=123456",context)
+	result, _ :=httpClient("http://10.3.20.215:8082/someGet?one=123456",context)
 	context.JSON(http.StatusOK,gin.H{"data":result})
 }
+
 func httpClient( url string,context  *gin.Context) (string,error) {
 	tr := &http.Transport{
 		TLSClientConfig : &tls.Config{InsecureSkipVerify: true},
@@ -47,13 +48,10 @@ func httpClient( url string,context  *gin.Context) (string,error) {
 		ext.SpanKindRPCClient,
 	)
 
-	span.Finish()
-
 	injectErr := tracer.(opentracing.Tracer).Inject(span.Context(), opentracing.HTTPHeaders, opentracing.HTTPHeadersCarrier(req.Header))
 	if injectErr != nil {
 		log.Fatalf("%s: Couldn't inject headers", err)
 	}
-
 	resp ,err :=  client.Do(req)
 	if err != nil {
 		return "", err
