@@ -1,5 +1,5 @@
 syntax = "proto3";
-package protocol;
+package api;
 
 service Greeter {
 	rpc Helloservice(RequestMessage) returns (ResponseMessage) {}

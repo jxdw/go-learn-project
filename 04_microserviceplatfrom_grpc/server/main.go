@@ -5,7 +5,7 @@ import (
 	"github.com/micro/go-micro"
 	"github.com/micro/go-micro/registry"
 	"github.com/micro/go-plugins/registry/etcdv3"
-	"go-learn-project/04_microserviceplatfrom_grpc/proto"
+	"go-learn-project/04_microserviceplatfrom_grpc/api"
 	"log"
 	"strconv"
 )
@@ -13,8 +13,8 @@ import (
 type Greeter struct {}
 
 //服务的接口实现
-func (g *Greeter) Helloservice(ctx context.Context, requestMessage *protocol.RequestMessage,
-	                          responseMessage *protocol.ResponseMessage) error {
+func (g *Greeter) Helloservice(ctx context.Context, requestMessage *api.RequestMessage,
+	                          responseMessage *api.ResponseMessage) error {
 	responseMessage.Message="hello "+requestMessage.Name+",your age is "+strconv.FormatInt(requestMessage.Age,10)
 	return nil
 }
@@ -28,7 +28,7 @@ func main() {
 		micro.Registry(registry),
 		)
 	service.Init()
-	protocol.RegisterGreeterHandler(service.Server(),new(Greeter))
+	api.RegisterGreeterHandler(service.Server(),new(Greeter))
 	if err := service.Run(); err != nil {
 		log.Fatal(err)
 	}
